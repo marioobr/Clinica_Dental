@@ -1,0 +1,17 @@
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/medicentro.exe
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/medicentro.pdb
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/Google.Protobuf.dll
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/MySql.Data.dll
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/MySql.Data.EntityFramework.dll
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/MySQL.Data.EntityFrameworkCore.Design.dll
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/MySQL.Data.EntityFrameworkCore.dll
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/MySql.Web.dll
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/MySql.Data.xml
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/MySql.Data.EntityFramework.xml
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/MySql.Web.xml
+/home/isi3/Projects/medicentro/medicentro/bin/Debug/MySQL.Data.EntityFrameworkCore.xml
+/home/isi3/Projects/medicentro/medicentro/obj/x86/Debug/medicentro.csprojAssemblyReference.cache
+/home/isi3/Projects/medicentro/medicentro/obj/x86/Debug/medicentro.csproj.CoreCompileInputs.cache
+/home/isi3/Projects/medicentro/medicentro/obj/x86/Debug/medicentro.csproj.CopyComplete
+/home/isi3/Projects/medicentro/medicentro/obj/x86/Debug/medicentro.exe
+/home/isi3/Projects/medicentro/medicentro/obj/x86/Debug/medicentro.pdb
