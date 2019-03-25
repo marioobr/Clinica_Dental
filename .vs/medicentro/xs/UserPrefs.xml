@@ -2,8 +2,18 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="medicentro/Productos.cs">
     <Files>
       <File FileName="medicentro/Productos.cs" Line="16" Column="1" />
-      <File FileName="medicentro/frmMovimientos.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="medicentro" expanded="True">
+            <Node name="medicentro" expanded="True">
+              <Node name="UserInterface" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />

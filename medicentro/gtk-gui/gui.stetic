@@ -355,19 +355,6 @@ Producto</property>
             <property name="Y">164</property>
           </packing>
         </child>
-        <child>
-          <widget class="Gtk.Button" id="button1">
-            <property name="MemberName" />
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">GtkButton</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">475</property>
-            <property name="Y">165</property>
-          </packing>
-        </child>
       </widget>
     </child>
   </widget>

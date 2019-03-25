@@ -28,3 +28,12 @@
 /home/mario/Escritorio/Medicentro/medicentro/medicentro/obj/x86/Release/medicentro.csproj.CoreCompileInputs.cache
 /home/mario/Escritorio/Medicentro/medicentro/medicentro/obj/x86/Release/medicentro.csproj.CopyComplete
 /home/mario/Escritorio/Medicentro/medicentro/medicentro/obj/x86/Release/medicentro.exe
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/medicentro.exe
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/MySql.Data.xml
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/MySql.Data.EntityFramework.xml
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/MySql.Web.xml
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/MySQL.Data.EntityFrameworkCore.xml
+/home/isi3/Desktop/Medicentro/medicentro/obj/x86/Release/medicentro.csprojAssemblyReference.cache
+/home/isi3/Desktop/Medicentro/medicentro/obj/x86/Release/medicentro.csproj.CoreCompileInputs.cache
+/home/isi3/Desktop/Medicentro/medicentro/obj/x86/Release/medicentro.csproj.CopyComplete
+/home/isi3/Desktop/Medicentro/medicentro/obj/x86/Release/medicentro.exe

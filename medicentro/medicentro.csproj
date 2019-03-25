@@ -51,22 +51,22 @@
     <Reference Include="Mono.Posix" />
     <Reference Include="System.Data" />
     <Reference Include="Google.Protobuf">
-      <HintPath>..\..\..\..\Descargas\mysql-connector-net-8.0.15-noinstall\v4.5.2\Google.Protobuf.dll</HintPath>
+      <HintPath>..\..\..\Downloads\mysql-connector-net-8.0.15-noinstall\v4.5.2\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\Descargas\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\Downloads\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data.EntityFramework">
-      <HintPath>..\..\..\..\Descargas\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySql.Data.EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Web">
-      <HintPath>..\..\..\..\Descargas\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySql.Web.dll</HintPath>
+      <HintPath>..\..\..\Downloads\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySql.Data.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="MySQL.Data.EntityFrameworkCore.Design">
-      <HintPath>..\..\..\..\Descargas\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySQL.Data.EntityFrameworkCore.Design.dll</HintPath>
+      <HintPath>..\..\..\Downloads\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySQL.Data.EntityFrameworkCore.Design.dll</HintPath>
     </Reference>
     <Reference Include="MySQL.Data.EntityFrameworkCore">
-      <HintPath>..\..\..\..\Descargas\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySQL.Data.EntityFrameworkCore.dll</HintPath>
+      <HintPath>..\..\..\Downloads\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySQL.Data.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\..\..\Downloads\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySql.Web.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
