@@ -4,19 +4,42 @@ namespace medicentro
 {
 	public partial class Splashscreen
 	{
+		private global::Gtk.Fixed fixedMainScreen;
+
+		private global::Gtk.Image imageMainScreen;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
 			// Widget medicentro.Splashscreen
+			this.WidthRequest = 685;
+			this.HeightRequest = 465;
 			this.Name = "medicentro.Splashscreen";
 			this.Title = global::Mono.Unix.Catalog.GetString("Splashscreen");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+			// Container child medicentro.Splashscreen.Gtk.Container+ContainerChild
+			this.fixedMainScreen = new global::Gtk.Fixed();
+			this.fixedMainScreen.WidthRequest = 685;
+			this.fixedMainScreen.HeightRequest = 465;
+			this.fixedMainScreen.Name = "fixedMainScreen";
+			this.fixedMainScreen.HasWindow = false;
+			// Container child fixedMainScreen.Gtk.Fixed+FixedChild
+			this.imageMainScreen = new global::Gtk.Image();
+			this.imageMainScreen.WidthRequest = 685;
+			this.imageMainScreen.HeightRequest = 465;
+			this.imageMainScreen.Name = "imageMainScreen";
+			this.imageMainScreen.Pixbuf = new global::Gdk.Pixbuf(global::System.IO.Path.Combine(global::System.AppDomain.CurrentDomain.BaseDirectory, "./MAINSCREEN.jpg"));
+			this.fixedMainScreen.Add(this.imageMainScreen);
+			global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixedMainScreen[this.imageMainScreen]));
+			w1.X = 1;
+			w1.Y = 11;
+			this.Add(this.fixedMainScreen);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 400;
-			this.DefaultHeight = 300;
+			this.DefaultWidth = 685;
+			this.DefaultHeight = 485;
 			this.Show();
 		}
 	}

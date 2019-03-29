@@ -37,3 +37,9 @@
 /home/isi3/Desktop/Medicentro/medicentro/obj/x86/Release/medicentro.csproj.CoreCompileInputs.cache
 /home/isi3/Desktop/Medicentro/medicentro/obj/x86/Release/medicentro.csproj.CopyComplete
 /home/isi3/Desktop/Medicentro/medicentro/obj/x86/Release/medicentro.exe
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/Google.Protobuf.dll
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/MySql.Data.dll
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/MySql.Data.EntityFramework.dll
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/MySQL.Data.EntityFrameworkCore.Design.dll
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/MySQL.Data.EntityFrameworkCore.dll
+/home/isi3/Desktop/Medicentro/medicentro/bin/Release/MySql.Web.dll

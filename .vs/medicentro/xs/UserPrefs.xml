@@ -1,20 +1,5 @@
 ﻿<Properties StartupConfiguration="{9581B886-41C8-420F-AC5D-E1BC70292076}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="medicentro/Productos.cs">
-    <Files>
-      <File FileName="medicentro/Productos.cs" Line="16" Column="1" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="medicentro" expanded="True">
-            <Node name="medicentro" expanded="True">
-              <Node name="UserInterface" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.ItemProperties.medicentro PreferredExecutionTarget="MonoDevelop.Default" />
