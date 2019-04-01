@@ -6,7 +6,7 @@
   <import>
     <widget-library name="../bin/Release/medicentro.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="565 305">
+  <widget class="Gtk.Window" id="MainWindow" design-size="667 305">
     <action-group name="Default">
       <action id="InicioAction">
         <property name="Type">Action</property>
@@ -69,6 +69,23 @@
         <property name="ShortLabel" translatable="yes">Historial</property>
         <signal name="Activated" handler="OnHistorialAction1Activated" />
       </action>
+      <action id="DoctoresAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Doctores</property>
+        <property name="ShortLabel" translatable="yes">Doctores</property>
+      </action>
+      <action id="GestionarDoctoresAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Gestionar doctores</property>
+        <property name="ShortLabel" translatable="yes">Gestionar doctores</property>
+        <signal name="Activated" handler="OnGestionarDoctoresActionActivated" />
+      </action>
+      <action id="GestionarEspecialidadesAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Gestionar especialidades</property>
+        <property name="ShortLabel" translatable="yes">Gestionar especialidades</property>
+        <signal name="Activated" handler="OnGestionarEspecialidadesActionActivated" />
+      </action>
     </action-group>
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
@@ -91,6 +108,10 @@
                   <node type="Menuitem" action="RealizarMovimientoAction" />
                   <node type="Menuitem" action="HistorialAction" />
                 </node>
+              </node>
+              <node type="Menu" action="DoctoresAction">
+                <node type="Menuitem" action="GestionarDoctoresAction" />
+                <node type="Menuitem" action="GestionarEspecialidadesAction" />
               </node>
               <node type="Menu" action="FacturaAction">
                 <node type="Menuitem" action="RealizarFacturaAction" />
@@ -1109,6 +1130,7 @@ Servicios</property>
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="Label" translatable="yes">Masculino</property>
+            <property name="Active">True</property>
             <property name="DrawIndicator">True</property>
             <property name="HasLabel">True</property>
             <property name="UseUnderline">True</property>

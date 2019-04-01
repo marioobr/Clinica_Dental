@@ -12,8 +12,8 @@ namespace medicentro
             win.Show();
             Application.Run();
 
-            Datos.Conexion contest = new Datos.Conexion();
-            contest.abrirConexion();
+            /*Datos.Conexion contest = new Datos.Conexion();
+            contest.abrirConexion();*/
 
         }
     }

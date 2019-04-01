@@ -34,8 +34,6 @@ namespace medicentro
 
 		private global::Gtk.Label lblEspecialidad;
 
-		private global::Gtk.Image imagenespecialidad;
-
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
@@ -179,14 +177,6 @@ namespace medicentro
 			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.lblEspecialidad]));
 			w14.X = 333;
 			w14.Y = 11;
-			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
-			this.imagenespecialidad = new global::Gtk.Image();
-			this.imagenespecialidad.Name = "imagenespecialidad";
-			this.imagenespecialidad.Pixbuf = new global::Gdk.Pixbuf(global::System.IO.Path.Combine(global::System.AppDomain.CurrentDomain.BaseDirectory, "./especilidad.png"));
-			this.fixedEspecialidad.Add(this.imagenespecialidad);
-			global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.imagenespecialidad]));
-			w15.X = 458;
-			w15.Y = 6;
 			this.Add(this.fixedEspecialidad);
 			if ((this.Child != null))
 			{

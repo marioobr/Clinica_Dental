@@ -48,4 +48,16 @@ public partial class MainWindow : Gtk.Window
         medicentro.frmHistoralFactura hfac = new medicentro.frmHistoralFactura();
         hfac.Show();
     }
+
+    protected void OnGestionarDoctoresActionActivated(object sender, EventArgs e)
+    {
+        medicentro.frmDoctor doctor = new medicentro.frmDoctor();
+        doctor.Show();
+    }
+
+    protected void OnGestionarEspecialidadesActionActivated(object sender, EventArgs e)
+    {
+        medicentro.frmEspecialidad espec = new medicentro.frmEspecialidad();
+        espec.Show();
+    }
 }

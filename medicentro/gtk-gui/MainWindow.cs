@@ -27,6 +27,12 @@ public partial class MainWindow
 
 	private global::Gtk.Action HistorialAction1;
 
+	private global::Gtk.Action DoctoresAction;
+
+	private global::Gtk.Action GestionarDoctoresAction;
+
+	private global::Gtk.Action GestionarEspecialidadesAction;
+
 	private global::Gtk.VBox vbox1;
 
 	private global::Gtk.MenuBar menubar1;
@@ -70,6 +76,15 @@ public partial class MainWindow
 		this.HistorialAction1 = new global::Gtk.Action("HistorialAction1", global::Mono.Unix.Catalog.GetString("Historial"), null, null);
 		this.HistorialAction1.ShortLabel = global::Mono.Unix.Catalog.GetString("Historial");
 		w1.Add(this.HistorialAction1, null);
+		this.DoctoresAction = new global::Gtk.Action("DoctoresAction", global::Mono.Unix.Catalog.GetString("Doctores"), null, null);
+		this.DoctoresAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Doctores");
+		w1.Add(this.DoctoresAction, null);
+		this.GestionarDoctoresAction = new global::Gtk.Action("GestionarDoctoresAction", global::Mono.Unix.Catalog.GetString("Gestionar doctores"), null, null);
+		this.GestionarDoctoresAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestionar doctores");
+		w1.Add(this.GestionarDoctoresAction, null);
+		this.GestionarEspecialidadesAction = new global::Gtk.Action("GestionarEspecialidadesAction", global::Mono.Unix.Catalog.GetString("Gestionar especialidades"), null, null);
+		this.GestionarEspecialidadesAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestionar especialidades");
+		w1.Add(this.GestionarEspecialidadesAction, null);
 		this.UIManager.InsertActionGroup(w1, 0);
 		this.AddAccelGroup(this.UIManager.AccelGroup);
 		this.Name = "MainWindow";
@@ -80,7 +95,7 @@ public partial class MainWindow
 		this.vbox1.Name = "vbox1";
 		this.vbox1.Spacing = 6;
 		// Container child vbox1.Gtk.Box+BoxChild
-		this.UIManager.AddUiFromString(@"<ui><menubar name='menubar1'><menu name='InicioAction' action='InicioAction'><menuitem name='SalirAction' action='SalirAction'/></menu><menu name='ProductosAction' action='ProductosAction'><menuitem name='GestionarProductosAction' action='GestionarProductosAction'/><menu name='GestionarMovimientosAction' action='GestionarMovimientosAction'><menuitem name='RealizarMovimientoAction' action='RealizarMovimientoAction'/><menuitem name='HistorialAction' action='HistorialAction'/></menu></menu><menu name='FacturaAction' action='FacturaAction'><menuitem name='RealizarFacturaAction' action='RealizarFacturaAction'/><menuitem name='HistorialAction1' action='HistorialAction1'/></menu></menubar></ui>");
+		this.UIManager.AddUiFromString(@"<ui><menubar name='menubar1'><menu name='InicioAction' action='InicioAction'><menuitem name='SalirAction' action='SalirAction'/></menu><menu name='ProductosAction' action='ProductosAction'><menuitem name='GestionarProductosAction' action='GestionarProductosAction'/><menu name='GestionarMovimientosAction' action='GestionarMovimientosAction'><menuitem name='RealizarMovimientoAction' action='RealizarMovimientoAction'/><menuitem name='HistorialAction' action='HistorialAction'/></menu></menu><menu name='DoctoresAction' action='DoctoresAction'><menuitem name='GestionarDoctoresAction' action='GestionarDoctoresAction'/><menuitem name='GestionarEspecialidadesAction' action='GestionarEspecialidadesAction'/></menu><menu name='FacturaAction' action='FacturaAction'><menuitem name='RealizarFacturaAction' action='RealizarFacturaAction'/><menuitem name='HistorialAction1' action='HistorialAction1'/></menu></menubar></ui>");
 		this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget("/menubar1")));
 		this.menubar1.Name = "menubar1";
 		this.vbox1.Add(this.menubar1);
@@ -93,7 +108,7 @@ public partial class MainWindow
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 565;
+		this.DefaultWidth = 667;
 		this.DefaultHeight = 305;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
@@ -103,5 +118,7 @@ public partial class MainWindow
 		this.HistorialAction.Activated += new global::System.EventHandler(this.OnHistorialActionActivated);
 		this.RealizarFacturaAction.Activated += new global::System.EventHandler(this.OnRealizarFacturaActionActivated);
 		this.HistorialAction1.Activated += new global::System.EventHandler(this.OnHistorialAction1Activated);
+		this.GestionarDoctoresAction.Activated += new global::System.EventHandler(this.OnGestionarDoctoresActionActivated);
+		this.GestionarEspecialidadesAction.Activated += new global::System.EventHandler(this.OnGestionarEspecialidadesActionActivated);
 	}
 }
