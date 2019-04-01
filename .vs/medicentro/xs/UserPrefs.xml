@@ -5,19 +5,6 @@
       <File FileName="medicentro/MainWindow.cs" Line="61" Column="22" />
       <File FileName="medicentro/frmEspecialidad.cs" Line="9" Column="26" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="medicentro" expanded="True">
-            <Node name="medicentro" expanded="True">
-              <Node name="UserInterface" expanded="True">
-                <Node name="medicentro.frmEspecialidad" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
