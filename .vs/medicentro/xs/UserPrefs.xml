@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{9581B886-41C8-420F-AC5D-E1BC70292076}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="medicentro/frmGestionCita.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="medicentro/Splashscreen.cs">
     <Files>
-      <File FileName="medicentro/frmRealizarCita.cs" Line="1" Column="1" />
-      <File FileName="medicentro/frmGestionPaciente.cs" Line="1" Column="1" />
-      <File FileName="medicentro/frmGestionCita.cs" Line="1" Column="1" />
+      <File FileName="medicentro/Splashscreen.cs" Line="5" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
