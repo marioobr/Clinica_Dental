@@ -1090,28 +1090,6 @@ Servicios</property>
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Label" id="lblIDDoctor">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">ID de Doctor: </property>
-          </widget>
-          <packing>
-            <property name="X">23</property>
-            <property name="Y">56</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Entry" id="txtIDDoc">
-            <property name="MemberName" />
-            <property name="CanFocus">True</property>
-            <property name="IsEditable">True</property>
-            <property name="InvisibleChar">•</property>
-          </widget>
-          <packing>
-            <property name="X">118</property>
-            <property name="Y">51</property>
-          </packing>
-        </child>
-        <child>
           <widget class="Gtk.Entry" id="txtCedula">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
@@ -1177,44 +1155,103 @@ Servicios</property>
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Label" id="lblEstadoDoc">
+          <widget class="Gtk.Label" id="lblDoctorTItulo">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Estado: </property>
+            <property name="LabelProp" translatable="yes">Registro de Doctores</property>
           </widget>
           <packing>
-            <property name="X">27</property>
-            <property name="Y">205</property>
+            <property name="X">288</property>
+            <property name="Y">10</property>
           </packing>
         </child>
         <child>
-          <widget class="Gtk.ComboBox" id="cbEstadoDoc">
+          <widget class="Gtk.Label" id="lblNombDoct">
             <property name="MemberName" />
-            <property name="WidthRequest">180</property>
+            <property name="LabelProp" translatable="yes">Nombres: </property>
+          </widget>
+          <packing>
+            <property name="X">43</property>
+            <property name="Y">57</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="lblNombreDoc">
+            <property name="MemberName" />
+            <property name="WidthRequest">215</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">117</property>
+            <property name="Y">50</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lbLApellidoDoc">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Apellidos: </property>
+          </widget>
+          <packing>
+            <property name="X">420</property>
+            <property name="Y">53</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtApellidoDoc">
+            <property name="MemberName" />
+            <property name="WidthRequest">215</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">505</property>
+            <property name="Y">48</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblTelefonoDoc">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Telefono: </property>
+          </widget>
+          <packing>
+            <property name="X">422</property>
+            <property name="Y">95</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtTelefonoDoc">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">506</property>
+            <property name="Y">92</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="cbEspecialidadDoc">
+            <property name="MemberName" />
+            <property name="WidthRequest">161</property>
             <property name="IsTextCombo">True</property>
             <property name="Items" translatable="yes" />
           </widget>
           <packing>
-            <property name="X">99</property>
-            <property name="Y">197</property>
+            <property name="X">506</property>
+            <property name="Y">136</property>
           </packing>
         </child>
         <child>
-          <widget class="Gtk.ScrolledWindow" id="tvwDoctor">
+          <widget class="Gtk.Label" id="lblEspecialidad">
             <property name="MemberName" />
-            <property name="WidthRequest">753</property>
-            <property name="HeightRequest">113</property>
-            <property name="ShadowType">In</property>
-            <child>
-              <widget class="Gtk.TreeView" id="treeview1">
-                <property name="MemberName" />
-                <property name="CanFocus">True</property>
-                <property name="ShowScrollbars">True</property>
-              </widget>
-            </child>
+            <property name="LabelProp" translatable="yes">Especialidad: </property>
           </widget>
           <packing>
-            <property name="X">30</property>
-            <property name="Y">303</property>
+            <property name="X">398</property>
+            <property name="Y">140</property>
           </packing>
         </child>
         <child>
@@ -1226,8 +1263,8 @@ Servicios</property>
             <property name="InvisibleChar">•</property>
           </widget>
           <packing>
-            <property name="X">29</property>
-            <property name="Y">259</property>
+            <property name="X">31</property>
+            <property name="Y">231</property>
           </packing>
         </child>
         <child>
@@ -1240,8 +1277,8 @@ Servicios</property>
             <property name="UseUnderline">True</property>
           </widget>
           <packing>
-            <property name="X">290</property>
-            <property name="Y">257</property>
+            <property name="X">292</property>
+            <property name="Y">230</property>
           </packing>
         </child>
         <child>
@@ -1254,8 +1291,8 @@ Servicios</property>
             <property name="UseUnderline">True</property>
           </widget>
           <packing>
-            <property name="X">425</property>
-            <property name="Y">256</property>
+            <property name="X">422</property>
+            <property name="Y">231</property>
           </packing>
         </child>
         <child>
@@ -1267,8 +1304,8 @@ Servicios</property>
             <property name="UseUnderline">True</property>
           </widget>
           <packing>
-            <property name="X">517</property>
-            <property name="Y">256</property>
+            <property name="X">512</property>
+            <property name="Y">232</property>
           </packing>
         </child>
         <child>
@@ -1281,8 +1318,8 @@ Servicios</property>
             <property name="UseUnderline">True</property>
           </widget>
           <packing>
-            <property name="X">607</property>
-            <property name="Y">256</property>
+            <property name="X">603</property>
+            <property name="Y">232</property>
           </packing>
         </child>
         <child>
@@ -1295,108 +1332,27 @@ Servicios</property>
             <property name="UseUnderline">True</property>
           </widget>
           <packing>
-            <property name="X">697</property>
-            <property name="Y">256</property>
+            <property name="X">695</property>
+            <property name="Y">233</property>
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Entry" id="lblNombreDoc">
+          <widget class="Gtk.ScrolledWindow" id="tvwDoctor">
             <property name="MemberName" />
-            <property name="WidthRequest">215</property>
-            <property name="CanFocus">True</property>
-            <property name="IsEditable">True</property>
-            <property name="InvisibleChar">•</property>
+            <property name="WidthRequest">753</property>
+            <property name="HeightRequest">138</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TreeView" id="treeview1">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
           </widget>
           <packing>
-            <property name="X">509</property>
-            <property name="Y">47</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblNombDoct">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Nombres: </property>
-          </widget>
-          <packing>
-            <property name="X">421</property>
-            <property name="Y">51</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Entry" id="txtApellidoDoc">
-            <property name="MemberName" />
-            <property name="WidthRequest">215</property>
-            <property name="CanFocus">True</property>
-            <property name="IsEditable">True</property>
-            <property name="InvisibleChar">•</property>
-          </widget>
-          <packing>
-            <property name="X">509</property>
-            <property name="Y">88</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lbLApellidoDoc">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Apellidos: </property>
-          </widget>
-          <packing>
-            <property name="X">419</property>
-            <property name="Y">90</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.ComboBox" id="cbEspecialidadDoc">
-            <property name="MemberName" />
-            <property name="WidthRequest">161</property>
-            <property name="IsTextCombo">True</property>
-            <property name="Items" translatable="yes" />
-          </widget>
-          <packing>
-            <property name="X">509</property>
-            <property name="Y">176</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblEspecialidad">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Especialidad: </property>
-          </widget>
-          <packing>
-            <property name="X">399</property>
-            <property name="Y">182</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Entry" id="txtTelefonoDoc">
-            <property name="MemberName" />
-            <property name="CanFocus">True</property>
-            <property name="IsEditable">True</property>
-            <property name="InvisibleChar">•</property>
-          </widget>
-          <packing>
-            <property name="X">509</property>
-            <property name="Y">132</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblTelefonoDoc">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Telefono: </property>
-          </widget>
-          <packing>
-            <property name="X">422</property>
-            <property name="Y">136</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblDoctorTItulo">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Registro de Doctores</property>
-          </widget>
-          <packing>
-            <property name="X">288</property>
-            <property name="Y">10</property>
+            <property name="X">30</property>
+            <property name="Y">274</property>
           </packing>
         </child>
       </widget>
@@ -1865,7 +1821,7 @@ Servicios</property>
     <property name="MemberName" />
     <property name="Title" translatable="yes">Roles</property>
     <property name="WindowPosition">CenterOnParent</property>
-    <property name="Buttons">1</property>
+    <property name="Buttons">0</property>
     <property name="HelpButton">False</property>
     <child internal-child="VBox">
       <widget class="Gtk.VBox" id="dialog1_VBox">
@@ -2101,25 +2057,8 @@ Servicios</property>
         </child>
       </widget>
     </child>
-    <child internal-child="ActionArea">
-      <widget class="Gtk.HButtonBox" id="__gtksharp_91_Stetic_TopLevelDialog_ActionArea">
-        <property name="MemberName" />
-        <property name="Size">1</property>
-        <child>
-          <widget class="Gtk.Button" id="button37">
-            <property name="MemberName" />
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">GtkButton</property>
-            <property name="UseUnderline">True</property>
-            <property name="ResponseId">0</property>
-          </widget>
-          <packing>
-            <property name="Expand">False</property>
-            <property name="Fill">False</property>
-          </packing>
-        </child>
-      </widget>
+    <child>
+      <placeholder />
     </child>
   </widget>
   <widget class="Gtk.Window" id="medicentro.frmRealizarCita" design-size="476 583">
