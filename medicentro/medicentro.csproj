@@ -115,6 +115,10 @@
     <Compile Include="gtk-gui\medicentro.frmDoctor.cs" />
     <Compile Include="frmEspecialidad.cs" />
     <Compile Include="gtk-gui\medicentro.frmEspecialidad.cs" />
+    <Compile Include="frmUsuario.cs" />
+    <Compile Include="gtk-gui\medicentro.frmUsuario.cs" />
+    <Compile Include="frmRoles.cs" />
+    <Compile Include="gtk-gui\medicentro.frmRoles.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entidades \" />

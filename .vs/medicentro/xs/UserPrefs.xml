@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{9581B886-41C8-420F-AC5D-E1BC70292076}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="medicentro/frmEspecialidad.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="medicentro/frmUsuario.cs">
     <Files>
-      <File FileName="medicentro/Program.cs" Line="18" Column="10" />
-      <File FileName="medicentro/MainWindow.cs" Line="61" Column="22" />
-      <File FileName="medicentro/frmEspecialidad.cs" Line="9" Column="26" />
+      <File FileName="medicentro/frmUsuario.cs" Line="1" Column="1" />
+      <File FileName="medicentro/frmRoles.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
