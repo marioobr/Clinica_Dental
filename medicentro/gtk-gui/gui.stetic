@@ -2150,4 +2150,563 @@ Servicios</property>
       </widget>
     </child>
   </widget>
+  <widget class="Gtk.Window" id="medicentro.frmRealizarCita" design-size="476 583">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">frmRealizarCita</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="lblReaCita">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Realizar Cita</property>
+          </widget>
+          <packing>
+            <property name="X">46</property>
+            <property name="Y">36</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtApeCita">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">114</property>
+            <property name="Y">147</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtNomCita">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">114</property>
+            <property name="Y">97</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblApeCita">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Apellidos:</property>
+          </widget>
+          <packing>
+            <property name="X">28</property>
+            <property name="Y">149</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblNomCita">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Nombres:</property>
+          </widget>
+          <packing>
+            <property name="X">31</property>
+            <property name="Y">100</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtHoraCita">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">114</property>
+            <property name="Y">200</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblHoraCita">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Hora:</property>
+          </widget>
+          <packing>
+            <property name="X">57</property>
+            <property name="Y">204</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Calendar" id="calendar1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="DisplayOptions">35</property>
+          </widget>
+          <packing>
+            <property name="X">115</property>
+            <property name="Y">260</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblFechaCita">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Fecha:</property>
+          </widget>
+          <packing>
+            <property name="X">52</property>
+            <property name="Y">259</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btGuardarCita">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Guardar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">115</property>
+            <property name="Y">464</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btCancelarCita">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Cancelar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">196</property>
+            <property name="Y">464</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="medicentro.frmGestionPaciente" design-size="723 581">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">frmGestionPaciente</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed7">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="lblGestionPa">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Gestion De Pacientes</property>
+          </widget>
+          <packing>
+            <property name="X">30</property>
+            <property name="Y">35</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtBuscarPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">28</property>
+            <property name="Y">340</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btBuscarPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">70</property>
+            <property name="HeightRequest">50</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Buscar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">345</property>
+            <property name="Y">330</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btGuardarPa">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Guardar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">438</property>
+            <property name="Y">335</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btCancelarPa">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Cancelar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">515</property>
+            <property name="Y">335</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btBorrarPa">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Borrar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">597</property>
+            <property name="Y">335</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblNombresPa">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Nombres:</property>
+          </widget>
+          <packing>
+            <property name="X">30</property>
+            <property name="Y">135</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtNombresPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">210</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">110</property>
+            <property name="Y">130</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblSexoPa">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Sexo:</property>
+          </widget>
+          <packing>
+            <property name="X">30</property>
+            <property name="Y">270</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblEdadPa">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Edad:</property>
+          </widget>
+          <packing>
+            <property name="X">30</property>
+            <property name="Y">215</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblApellidos">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Apellidos:</property>
+          </widget>
+          <packing>
+            <property name="X">30</property>
+            <property name="Y">175</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtApellidosPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">210</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">109</property>
+            <property name="Y">170</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtEdadPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">210</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">109</property>
+            <property name="Y">210</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.RadioButton" id="rbMasculinoPa">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Masculino</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+            <property name="Group">group1</property>
+          </widget>
+          <packing>
+            <property name="X">107</property>
+            <property name="Y">267</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.RadioButton" id="rbFemeninoPa">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Femenino</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+            <property name="Group">group1</property>
+          </widget>
+          <packing>
+            <property name="X">211</property>
+            <property name="Y">267</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="tvwGestionPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">700</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TreeView" id="tvwGestionPa1">
+                <property name="MemberName" />
+                <property name="HeightRequest">150</property>
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">23</property>
+            <property name="Y">401</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblDatosPa">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Datos Del Paciente</property>
+          </widget>
+          <packing>
+            <property name="X">30</property>
+            <property name="Y">80</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblCedulaPa">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Cedula:</property>
+          </widget>
+          <packing>
+            <property name="X">365</property>
+            <property name="Y">135</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtCedulaPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">210</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">437</property>
+            <property name="Y">130</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtTelefonoPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">210</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">437</property>
+            <property name="Y">170</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblTelefonoPa">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Telefono:</property>
+          </widget>
+          <packing>
+            <property name="X">365</property>
+            <property name="Y">175</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblCorreo">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Correo:</property>
+          </widget>
+          <packing>
+            <property name="X">365</property>
+            <property name="Y">215</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtCorreoPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">210</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">437</property>
+            <property name="Y">210</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lbl">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Direccion:</property>
+          </widget>
+          <packing>
+            <property name="X">365</property>
+            <property name="Y">257</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtDireccionPa">
+            <property name="MemberName" />
+            <property name="WidthRequest">210</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">437</property>
+            <property name="Y">254</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="medicentro.frmGestionCita" design-size="667 510">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">frmGestionCita</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed6">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TreeView" id="treeview6">
+                <property name="MemberName" />
+                <property name="WidthRequest">600</property>
+                <property name="HeightRequest">200</property>
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">34</property>
+            <property name="Y">262</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblGestionCita">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Gestion De Citas</property>
+          </widget>
+          <packing>
+            <property name="X">38</property>
+            <property name="Y">26</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry1">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">33</property>
+            <property name="Y">195</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btBuscarGci">
+            <property name="MemberName" />
+            <property name="WidthRequest">70</property>
+            <property name="HeightRequest">50</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Buscar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">341</property>
+            <property name="Y">187</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btGuardarGci">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Guardar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">425</property>
+            <property name="Y">194</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btCancelarGci">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Cancelar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">505</property>
+            <property name="Y">194</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btBorrarGci">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Borrar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">585</property>
+            <property name="Y">194</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
 </stetic-interface>

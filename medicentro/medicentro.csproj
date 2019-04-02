@@ -119,6 +119,12 @@
     <Compile Include="gtk-gui\medicentro.frmUsuario.cs" />
     <Compile Include="frmRoles.cs" />
     <Compile Include="gtk-gui\medicentro.frmRoles.cs" />
+    <Compile Include="frmRealizarCita.cs" />
+    <Compile Include="gtk-gui\medicentro.frmRealizarCita.cs" />
+    <Compile Include="frmGestionPaciente.cs" />
+    <Compile Include="gtk-gui\medicentro.frmGestionPaciente.cs" />
+    <Compile Include="frmGestionCita.cs" />
+    <Compile Include="gtk-gui\medicentro.frmGestionCita.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entidades \" />
