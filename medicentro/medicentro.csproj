@@ -141,9 +141,6 @@
     <Compile Include="Negocio\NgCita.cs" />
     <Compile Include="Negocio\NgPaciente.cs" />
     <Compile Include="Negocio\ngUsuario.cs" />
-    <Compile Include="Datos\DtsRol.cs" />
-    <Compile Include="Datos\DtsUser.cs" />
-    <Compile Include="Datos\DtsUserRol.cs" />
     <Compile Include="Negocio\ngHistorialMov.cs" />
     <Compile Include="Datos\dtHistorialMov.cs" />
     <Compile Include="frmUser.cs" />
@@ -152,6 +149,9 @@
     <Compile Include="gtk-gui\medicentro.frmUserRol.cs" />
     <Compile Include="frmopcion.cs" />
     <Compile Include="gtk-gui\medicentro.frmopcion.cs" />
+    <Compile Include="Datos\DtRol.cs" />
+    <Compile Include="Datos\DtUser.cs" />
+    <Compile Include="Datos\DtUserRol.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entidades \" />

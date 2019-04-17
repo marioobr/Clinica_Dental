@@ -55,9 +55,9 @@ public partial class MainWindow : Gtk.Window
         doctor.Show();
     }
 
-    /*protected void OnGestionarEspecialidadesActionActivated(object sender, EventArgs e)
+    protected void OnGestionarEspecialidadesActionActivated(object sender, EventArgs e)
     {
-    }*/
+    }
 
     protected void OnGestionarEspecialidadesAction1Activated(object sender, EventArgs e)
     {

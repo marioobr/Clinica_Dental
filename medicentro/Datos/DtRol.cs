@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Data;
-using MySql.Data;
-using System.Text;
-using medicentro.Entidades.Seguridad;
-using Gtk;
 using medicentro.Datos;
+using medicentro.Entidades;
+using Gtk;
 using System.Collections.Generic;
+using System.Text;
+using System.Data;
+using medicentro.Entidades.Seguridad;
 
-namespace medicentro.Datos
+namespace Genesis.Datos
 {
-    public class DtsRol
+    public class DtRol
     {
-
         Conexion con = new Conexion();
         MessageDialog ms = null;
         StringBuilder sb = new StringBuilder();
@@ -23,8 +22,8 @@ namespace medicentro.Datos
             List<Rol> listRoles = new List<Rol>();
             IDataReader idr = null;
             sb.Clear();
-            sb.Append("USE Seguridad;");
-            sb.Append("SELECT id_rol,rol FROM tbl_rol WHERE estado <> '3';");
+            sb.Append("USE CLinicaDental;");
+            sb.Append("SELECT idRol, Rol FROM Rol WHERE Estado <> '3';");
 
             try
             {
@@ -35,8 +34,8 @@ namespace medicentro.Datos
                     Rol tr = new Rol()
                     //Tbl_usuarios tus = new Tbl_usuarios()
                     {
-                        Id_rol = (Int32)idr["id_rol"],
-                        Roldes = idr["rol"].ToString(),
+                        Id_rol = (Int32)idr["idRol"],
+                        Roldes = idr["Rol"].ToString(),
 
                     };
                     listRoles.Add(tr);
@@ -63,8 +62,8 @@ namespace medicentro.Datos
             int existe = 0; //bandera
             IDataReader idr = null;
             sb.Clear();
-            sb.Append("USE Seguridad;");
-            sb.Append("SELECT id_rol FROM tbl_rol WHERE rol=" + "'" + rol + "';");
+            sb.Append("USE ClinicaDental;");
+            sb.Append("SELECT idRol FROM Rol WHERE Rol =" + "'" + rol + "';");
 
             try
             {
@@ -72,7 +71,7 @@ namespace medicentro.Datos
                 idr = con.Leer(CommandType.Text, sb.ToString());
                 if (idr.Read())
                 {
-                    existe = (Int32)idr["id_rol"];
+                    existe = (Int32)idr["idRol"];
                 }
                 return existe;
             }
@@ -89,13 +88,11 @@ namespace medicentro.Datos
             }
         }//fin del metodo
 
-        public DtsRol()
+        #endregion
+
+
+        public DtRol()
         {
-
         }
-
     }
-
-
 }
-#endregion

@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Data;
-using MySql.Data;
-using System.Text;
-using medicentro.Entidades.Seguridad;
-using medicentro.Datos;
-using Gtk;
 using System.Collections.Generic;
+using System.Text;
+using MySql.Data;
+using Gtk;
+using medicentro.Datos;
+using medicentro.Entidades;
+using medicentro.Entidades.Seguridad;
 
-namespace medicentro.Datos
+namespace Genesis.Datos
 {
-    public class DtsUserRol
+
+    public class DtUserRol
     {
-
-
         Conexion con = new Conexion();
         MessageDialog ms = null;
         StringBuilder sb = new StringBuilder();
@@ -26,7 +26,7 @@ namespace medicentro.Datos
 
             IDataReader dr = null;
             sb.Clear();
-            sb.Append("SELECT id_user,user,nombres,apellidos,id_rol,rol FROM VwUserRol WHERE estado<>3;");
+            sb.Append("SELECT idUser, User, Nombre, Apellidos, idRol, Rol FROM VwUserRol WHERE Estado <> 3;");
             try
             {
                 con.abrirConexion();
@@ -59,9 +59,9 @@ namespace medicentro.Datos
             bool guardado = false; //bandera
             int x = 0; //variable de control
             sb.Clear();
-            sb.Append("USE Seguridad;");
-            sb.Append("INSERT INTO tbl_UserRol");
-            sb.Append("(id_user, id_rol)");
+            sb.Append("USE ClinicaDental;");
+            sb.Append("INSERT INTO UserRol");
+            sb.Append("(idUser, idRol)");
             sb.Append(" VALUES('" + tur.IdUser + "','" + tur.IdRol + "');");
             try
             {
@@ -100,9 +100,9 @@ namespace medicentro.Datos
         {
             int eliminado;
             sb.Clear();
-            sb.Append("USE Seguridad;");
-            sb.Append("DELETE FROM tbl_UserRol WHERE id_user=" + tur.IdUser_rol + " ");
-            sb.Append("AND id_rol=" + tur.IdRol + ";");
+            sb.Append("USE ClinicaDental;");
+            sb.Append("DELETE FROM User_Rol WHERE User_idUser=" + tur.IdUser + " ");
+            sb.Append("AND Rol_idRol=" + tur.IdRol + ";");
 
             try
             {
@@ -130,9 +130,9 @@ namespace medicentro.Datos
             bool existe = false; //bandera
             IDataReader idr = null;
             sb.Clear();
-            sb.Append("USE Seguridad;");
-            sb.Append("SELECT * FROM tbl_UserRol WHERE id_user=" + tur.IdUser_rol + " ");
-            sb.Append("AND id_rol=" + tur.IdRol + ";");
+            sb.Append("USE ClinicaDental;");
+            sb.Append("SELECT * FROM User_rol WHERE User_idUser=" + tur.IdUser + " ");
+            sb.Append("AND Rol_idRol=" + tur.IdRol + ";");
 
             try
             {
@@ -157,12 +157,11 @@ namespace medicentro.Datos
             }
         }//fin del metodo
 
+        #endregion
 
 
-        public DtsUserRol()
-
+    public DtUserRol()
         {
         }
     }
 }
-#endregion

@@ -1,97 +1,30 @@
 ﻿using System;
 using System.Data;
 using MySql.Data;
-using System.Text;
-using medicentro.Entidades.Seguridad;
-using medicentro.Datos;
 using Gtk;
+using System.Text;
+using medicentro.Entidades;
 using System.Collections.Generic;
+using medicentro.Datos;
+using medicentro.Entidades.Seguridad;
 
-namespace medicentro.Datos
+namespace Genesis.Datos
 {
-    public class DtsUser
+    public class DtUser
     {
-
         Conexion con = new Conexion();
         MessageDialog ms = null;
         StringBuilder sb = new StringBuilder();
-        User us = new User();
-        UserRol rus = new UserRol();
-        Rol rol = new Rol();
-        DtsRol dtRoles = new DtsRol();
-        DtsUser dtUser = new DtsUser();
 
-        public bool ExisteEmail(User tus)
-        {
-            bool existe = false; //bandera
-            IDataReader idr = null;
-            sb.Clear();
-            sb.Append("USE ClinicaDental;");
-            sb.Append("SELECT * FROM  User WHERE Email=" + "'" + tus.Email + "';");
-
-            try
-            {
-                con.abrirConexion();
-                idr = con.Leer(CommandType.Text, sb.ToString());
-                if (idr.Read())
-                {
-                    existe = true;
-                }
-                return existe;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
-                throw;
-            }
-            finally
-            {
-                idr.Close();
-                con.CerrarConexion();
-            }
-        }//fin del metodo
-
-        public int getIdUser(String user)
-        {
-            int existe = 0; //bandera
-            IDataReader idr = null;
-            sb.Clear();
-            sb.Append("USE ClinicaDental;");
-            sb.Append("SELECT idUser FROM User WHERE user=" + "'" + user + "';");
-
-            try
-            {
-                con.abrirConexion();
-                idr = con.Leer(CommandType.Text, sb.ToString());
-                if (idr.Read())
-                {
-                    existe = (Int32)idr["idUser"];
-                }
-                return existe;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
-                throw;
-            }
-            finally
-            {
-                idr.Close();
-                con.CerrarConexion();
-            }
-        }//fin del metodo
-
-        public bool GuardarUsuario(User us)
+        #region metodos
+        public bool GuardarUsuario(User tus)
         {
             bool guardado = false; // bandera
             int x = 0; // variable de control
             sb.Clear();
-            sb.Append("USE ClinicaDental;");
             sb.Append("INSERT INTO User");
-            sb.Append("(User, Pwd, Nombre, Apellidos, Email, Estado)");
-            sb.Append(" VALUES('" + us.Userdes + "','" + us.Pwd + "','" + us.Nombre + "','" + us.Apellidos + "','" + us.Email + "','" + 1 + "')");
+            sb.Append("(User, pwd, Nombre, Apellidos, Email, Estado)");
+            sb.Append(" VALUES('" + tus.Userdes + "','" + tus.Pwd + "','" + tus.Nombre + "','" + tus.Apellidos + "','" + tus.Email + "','" + 1 + "')");
             try
             {
                 con.abrirConexion();
@@ -123,48 +56,6 @@ namespace medicentro.Datos
 
         }//fin del metodo
 
-        public List<User> cbxUsuarios()
-        {
-            List<User> listUser = new List<User>();
-            IDataReader idr = null;
-            sb.Clear();
-            sb.Append("USE ClinicaDental;");
-            sb.Append("SELECT idUser, User FROM User WHERE estado <> '3';");
-
-            try
-            {
-                con.abrirConexion();
-                idr = con.Leer(CommandType.Text, sb.ToString());
-                while (idr.Read())
-                {
-                    User tus = new User()
-                    //Tbl_usuarios tus = new Tbl_usuarios()
-                    {
-                        Id_user = (Int32)idr["idUser"],
-                        Userdes = idr["User"].ToString(),
-
-                    };
-                    listUser.Add(tus);
-
-                }
-                idr.Close();
-                return listUser;
-
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
-                throw;
-            }
-            finally
-            {
-                con.CerrarConexion();
-            }
-        }
-
-
-
         public ListStore ListarUsuarios()
         {
             ListStore datos = new ListStore(typeof(string),
@@ -173,7 +64,7 @@ namespace medicentro.Datos
 
             IDataReader dr = null;
             sb.Clear();
-            sb.Append("SELECT idUser, User, Nombre, Apellidos, Email FROM User WHERE estado <> 3;");
+            sb.Append("SELECT idUser, User, Nombre, Apellidos, Email FROM User WHERE Estado<>3;");
             try
             {
                 con.abrirConexion();
@@ -202,15 +93,13 @@ namespace medicentro.Datos
         }//fin del metodo
 
 
-
-        public bool ExisteUser(User tus)
+        public bool existeUser(User tus)
         {
-            bool existe = false;
+            bool existe = false; //bandera
             IDataReader idr = null;
-           // StringBuilder sb = new StringBuilder();
             sb.Clear();
             sb.Append("USE ClinicaDental;");
-            sb.Append("SELECT * FROM User WHERE User = " + "'" + us.Userdes + "';");
+            sb.Append("SELECT * FROM User WHERE User=" + "'" + tus.Userdes + "';");
 
             try
             {
@@ -233,23 +122,76 @@ namespace medicentro.Datos
                 idr.Close();
                 con.CerrarConexion();
             }
-        }
+        }//fin del metodo
 
-        internal static int EliminarRoles()
+        public int getIdUser(String user)
         {
-            throw new NotImplementedException();
-        }
+            int existe = 0; //bandera
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("USE ClinicaDental;");
+            sb.Append("SELECT IdUser FROM User WHERE User=" + "'" + user + "';");
 
-        public Int32 EliminarUsuario(User us)
+            try
+            {
+                con.abrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                if (idr.Read())
+                {
+                    existe = (Int32)idr["IdUser"];
+                }
+                return existe;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
+
+        public bool existeEmail(User tus)
         {
+            bool existe = false; //bandera
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("USE Seguridad;");
+            sb.Append("SELECT * FROM User WHERE Email=" + "'" + tus.Email + "';");
+
+            try
+            {
+                con.abrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                if (idr.Read())
+                {
+                    existe = true;
+                }
+                return existe;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                idr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
 
 
+        public Int32 EliminarUser(User tus)
+        {
             int eliminado;
             sb.Clear();
-            //MessageDialog ms = null;
-            //StringBuilder sb = new StringBuilder();
-            sb.Append("USE ClinicaDental;");
-            sb.Append("UPDATE User set Estado = '3' WHERE idUser = " + us.Id_user + ";");
+            sb.Append("UPDATE User SET Estado = 3 WHERE idUser=" + tus.Id_user + "");
 
             try
             {
@@ -259,7 +201,8 @@ namespace medicentro.Datos
             }
             catch (Exception e)
             {
-                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, e.Message);
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
                 ms.Run();
                 ms.Destroy();
                 throw;
@@ -268,14 +211,14 @@ namespace medicentro.Datos
             {
                 con.CerrarConexion();
             }
-        }
+
+        }//fin del metodo
 
         public bool ActualizarUser(User tus)
         {
             bool actualizado = false;
             int x = 0;
             sb.Clear();
-            sb.Append("USE ClinicaDental");
             sb.Append("UPDATE User SET User = '" + tus.Userdes + "',");
             sb.Append("pwd = '" + tus.Pwd + "',");
             sb.Append("Nombre = '" + tus.Nombre + "',");
@@ -352,12 +295,60 @@ namespace medicentro.Datos
             }
         }//fin del metodo
 
-        public DtsUser()
+
+        public List<User> cbxUsuarios()
         {
+            List<User> listUser = new List<User>();
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("USE ClinicaDental;");
+            sb.Append("SELECT idUser, User FROM User WHERE Estado <> '3';");
+
+            try
+            {
+                con.abrirConexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read())
+                {
+                    User tus = new User()
+                    //Tbl_usuarios tus = new Tbl_usuarios()
+                    {
+                        Id_user = (Int32)idr["idUser"],
+                        Userdes = idr["User"].ToString(),
+
+                    };
+                    listUser.Add(tus);
+
+                }
+                idr.Close();
+                return listUser;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                con.CerrarConexion();
+            }
         }
 
+
+
+
+
+
+
+
+        #endregion
+
+
+
+        public DtUser()
+        {
+        }
     }
 }
-
-
-

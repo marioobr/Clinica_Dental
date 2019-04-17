@@ -2,6 +2,7 @@
 using Gtk;
 using medicentro.Entidades.Seguridad;
 using medicentro.Datos;
+using Genesis.Datos;
 
 namespace medicentro.Negocio
 {
@@ -16,9 +17,9 @@ namespace medicentro.Negocio
             try
             {
                 //bool existe = false;
-                DtsUser dtus = new DtsUser();
+                DtUser dtus = new DtUser();
                 //existe = dtus.existeUser(tus);
-                if (dtus.ExisteUser(tus))
+                if (dtus.existeUser(tus))
                 {
                     ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                         ButtonsType.Ok, "El Usuario ya existe!!! por favor intente con otro usuario.");
@@ -26,7 +27,7 @@ namespace medicentro.Negocio
                     ms.Destroy();
                     return guardado;
                 }
-                if (dtus.ExisteEmail(tus))
+                if (dtus.existeEmail(tus))
                 {
                     ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
                         ButtonsType.Ok, "El correo electrónico ya existe!!! por favor intente con otro correo.");
