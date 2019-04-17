@@ -4,11 +4,10 @@ using System.Collections.Generic;
 using System.Text;
 using MySql.Data;
 using Gtk;
-using medicentro.Datos;
 using medicentro.Entidades;
 using medicentro.Entidades.Seguridad;
 
-namespace Genesis.Datos
+namespace medicentro.Datos
 {
 
     public class DtUserRol

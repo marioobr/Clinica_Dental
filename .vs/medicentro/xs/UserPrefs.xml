@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{9581B886-41C8-420F-AC5D-E1BC70292076}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="medicentro/Negocio/ngUsuario.cs">
     <Files>
-      <File FileName="medicentro/frmUser.cs" Line="1" Column="1" />
-      <File FileName="medicentro/frmUserRol.cs" Line="1" Column="1" />
-      <File FileName="medicentro/MainWindow.cs" Line="58" Column="25" />
-      <File FileName="medicentro/Datos/DtRol.cs" Line="91" Column="19" />
-      <File FileName="medicentro/Datos/DtUser.cs" Line="27" Column="131" />
-      <File FileName="medicentro/Datos/DtUserRol.cs" Line="135" Column="59" />
-      <File FileName="medicentro/Negocio/ngUsuario.cs" Line="7" Column="29" />
+      <File FileName="medicentro/Datos/DtUser.cs" Line="192" Column="17" />
+      <File FileName="medicentro/Datos/DtUserRol.cs" Line="7" Column="28" />
+      <File FileName="medicentro/Negocio/ngUsuario.cs" Line="15" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

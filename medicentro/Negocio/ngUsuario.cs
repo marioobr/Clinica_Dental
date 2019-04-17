@@ -2,7 +2,6 @@
 using Gtk;
 using medicentro.Entidades.Seguridad;
 using medicentro.Datos;
-using Genesis.Datos;
 
 namespace medicentro.Negocio
 {

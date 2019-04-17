@@ -5,10 +5,9 @@ using Gtk;
 using System.Text;
 using medicentro.Entidades;
 using System.Collections.Generic;
-using medicentro.Datos;
 using medicentro.Entidades.Seguridad;
 
-namespace Genesis.Datos
+namespace medicentro.Datos
 {
     public class DtUser
     {
@@ -335,13 +334,6 @@ namespace Genesis.Datos
                 con.CerrarConexion();
             }
         }
-
-
-
-
-
-
-
 
         #endregion
 
