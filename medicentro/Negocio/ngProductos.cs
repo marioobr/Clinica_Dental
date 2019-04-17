@@ -8,49 +8,55 @@ namespace medicentro.Negocio
 {
     public class ngProductos
     {
+        dtProducto dtprod = new dtProducto();
+        MessageDialog ms = null;
         #region metodos
 
         //metodo Guardarempleado
         public bool NgGuardarProductos(Producto prod)
         {
-            MessageDialog ms = null;
             bool guardado = false;
-
             try
             {
-                bool existe = false;
-                dtUsuarios dtus = new dtUsuarios();
-                existe = dtus.ExisteUser(tus);
-
-                if(existe)
+                //bool existe = false;
+                //existe = dtus.existeUser(tus);
+                if (dtprod.existeProducto(prod))
                 {
-                    ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "El usuario ya existe");
+                    ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                        ButtonsType.Ok, "El producto ya existe!!! por favor intente con otro producto.");
                     ms.Run();
                     ms.Destroy();
                     return guardado;
                 }
                 else
                 {
-                    guardado = dtus.GuardarUsuarios(tus);
-                    if(guardado)
+                    guardado = dtprod.GuardarProductos(prod);
+                    if (guardado)
                     {
-                        Console.WriteLine("NG: El usuario se guardo correctamente!!");
+                        Console.WriteLine("NG: El producto se guardo exitosamente!!!");
                         return guardado;
                     }
                     else
                     {
-                        Console.WriteLine("NG: Error al guardar el usuario, verificar metodo");
+                        ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                        ButtonsType.Ok, "Por favor verifique sus datos e intente nuevamente!!!");
+                        ms.Run();
+                        ms.Destroy();
+                        Console.WriteLine("NG: ERROR AL GUARDAR, VERIFICAR EL METODO");
                         return guardado;
                     }
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                Console.WriteLine("Ng: "+e.Message);
-                Console.WriteLine("Ng: "+e.StackTrace);
+                Console.WriteLine("NG: ERROR=" + e.Message);
+                Console.WriteLine("NG: ERROR=" + e.StackTrace);
                 throw;
+                //return guardado;
             }
         }//fin del metodo
+
+        #endregion
         public ngProductos()
         {
         }

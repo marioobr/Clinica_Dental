@@ -6,21 +6,13 @@ namespace medicentro
 	{
 		private global::Gtk.Fixed fixed1;
 
-		private global::Gtk.ComboBox cmbSeleccion;
-
-		private global::Gtk.Calendar calendar1;
-
-		private global::Gtk.Label lblFecha;
-
-		private global::Gtk.Label lblDescripcion;
-
-		private global::Gtk.Entry txtCantidad1;
-
-		private global::Gtk.Label lblCantidad;
-
-		private global::Gtk.Entry txtCantidad;
+		private global::Gtk.ComboBox cbxSeleccion;
 
 		private global::Gtk.Label lblInfo;
+
+		private global::Gtk.Entry txtBuscarProd;
+
+		private global::Gtk.Label lblBuscar;
 
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 
@@ -30,96 +22,73 @@ namespace medicentro
 
 		private global::Gtk.Button btnRealizarMov;
 
+		private global::Gtk.Label lblNombreProd;
+
+		private global::Gtk.Entry txtNombreProd;
+
+		private global::Gtk.Entry txtCantidad;
+
+		private global::Gtk.Label lblCantidad;
+
+		private global::Gtk.Label lblDescripcion;
+
+		private global::Gtk.Entry txtFecha;
+
+		private global::Gtk.Label lblFecha;
+
+		private global::Gtk.Entry txtDescripcion;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
 			// Widget medicentro.frmMovimientos
-			this.WidthRequest = 800;
+			this.WidthRequest = 900;
 			this.HeightRequest = 430;
 			this.Name = "medicentro.frmMovimientos";
-			this.Title = global::Mono.Unix.Catalog.GetString("frmMovimientos");
+			this.Title = global::Mono.Unix.Catalog.GetString("Movimientos");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.AllowGrow = false;
 			// Container child medicentro.frmMovimientos.Gtk.Container+ContainerChild
 			this.fixed1 = new global::Gtk.Fixed();
-			this.fixed1.WidthRequest = 600;
+			this.fixed1.WidthRequest = 900;
 			this.fixed1.HeightRequest = 360;
 			this.fixed1.Name = "fixed1";
 			this.fixed1.HasWindow = false;
 			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.cmbSeleccion = global::Gtk.ComboBox.NewText();
-			this.cmbSeleccion.AppendText(global::Mono.Unix.Catalog.GetString("Compra"));
-			this.cmbSeleccion.AppendText(global::Mono.Unix.Catalog.GetString("Devolucion"));
-			this.cmbSeleccion.WidthRequest = 150;
-			this.cmbSeleccion.Name = "cmbSeleccion";
-			this.cmbSeleccion.Active = 0;
-			this.fixed1.Add(this.cmbSeleccion);
-			global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.cmbSeleccion]));
+			this.cbxSeleccion = global::Gtk.ComboBox.NewText();
+			this.cbxSeleccion.WidthRequest = 150;
+			this.cbxSeleccion.Name = "cbxSeleccion";
+			this.fixed1.Add(this.cbxSeleccion);
+			global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.cbxSeleccion]));
 			w1.X = 63;
 			w1.Y = 60;
-			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.calendar1 = new global::Gtk.Calendar();
-			this.calendar1.CanFocus = true;
-			this.calendar1.Name = "calendar1";
-			this.calendar1.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
-			this.fixed1.Add(this.calendar1);
-			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.calendar1]));
-			w2.X = 111;
-			w2.Y = 231;
-			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.lblFecha = new global::Gtk.Label();
-			this.lblFecha.Name = "lblFecha";
-			this.lblFecha.LabelProp = global::Mono.Unix.Catalog.GetString("Fecha:");
-			this.fixed1.Add(this.lblFecha);
-			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblFecha]));
-			w3.X = 53;
-			w3.Y = 247;
-			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.lblDescripcion = new global::Gtk.Label();
-			this.lblDescripcion.Name = "lblDescripcion";
-			this.lblDescripcion.LabelProp = global::Mono.Unix.Catalog.GetString("Descripcion:");
-			this.fixed1.Add(this.lblDescripcion);
-			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblDescripcion]));
-			w4.X = 11;
-			w4.Y = 189;
-			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.txtCantidad1 = new global::Gtk.Entry();
-			this.txtCantidad1.WidthRequest = 200;
-			this.txtCantidad1.CanFocus = true;
-			this.txtCantidad1.Name = "txtCantidad1";
-			this.txtCantidad1.IsEditable = true;
-			this.txtCantidad1.InvisibleChar = '•';
-			this.fixed1.Add(this.txtCantidad1);
-			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtCantidad1]));
-			w5.X = 107;
-			w5.Y = 180;
-			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.lblCantidad = new global::Gtk.Label();
-			this.lblCantidad.Name = "lblCantidad";
-			this.lblCantidad.LabelProp = global::Mono.Unix.Catalog.GetString("Cantidad:");
-			this.fixed1.Add(this.lblCantidad);
-			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblCantidad]));
-			w6.X = 28;
-			w6.Y = 124;
-			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.txtCantidad = new global::Gtk.Entry();
-			this.txtCantidad.WidthRequest = 200;
-			this.txtCantidad.CanFocus = true;
-			this.txtCantidad.Name = "txtCantidad";
-			this.txtCantidad.IsEditable = true;
-			this.txtCantidad.InvisibleChar = '•';
-			this.fixed1.Add(this.txtCantidad);
-			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtCantidad]));
-			w7.X = 106;
-			w7.Y = 122;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.lblInfo = new global::Gtk.Label();
 			this.lblInfo.Name = "lblInfo";
 			this.lblInfo.LabelProp = global::Mono.Unix.Catalog.GetString("Realizar Movimiento");
 			this.fixed1.Add(this.lblInfo);
-			global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblInfo]));
-			w8.X = 287;
-			w8.Y = 11;
+			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblInfo]));
+			w2.X = 320;
+			w2.Y = 12;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.txtBuscarProd = new global::Gtk.Entry();
+			this.txtBuscarProd.WidthRequest = 200;
+			this.txtBuscarProd.CanFocus = true;
+			this.txtBuscarProd.Name = "txtBuscarProd";
+			this.txtBuscarProd.IsEditable = true;
+			this.txtBuscarProd.InvisibleChar = '•';
+			this.fixed1.Add(this.txtBuscarProd);
+			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtBuscarProd]));
+			w3.X = 681;
+			w3.Y = 57;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.lblBuscar = new global::Gtk.Label();
+			this.lblBuscar.Name = "lblBuscar";
+			this.lblBuscar.LabelProp = global::Mono.Unix.Catalog.GetString("Buscar Producto:");
+			this.fixed1.Add(this.lblBuscar);
+			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblBuscar]));
+			w4.X = 549;
+			w4.Y = 59;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
@@ -132,9 +101,9 @@ namespace medicentro
 			this.tvwProductos.Name = "tvwProductos";
 			this.GtkScrolledWindow.Add(this.tvwProductos);
 			this.fixed1.Add(this.GtkScrolledWindow);
-			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.GtkScrolledWindow]));
-			w10.X = 376;
-			w10.Y = 58;
+			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.GtkScrolledWindow]));
+			w6.X = 472;
+			w6.Y = 99;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.btnCancelar = new global::Gtk.Button();
 			this.btnCancelar.CanFocus = true;
@@ -142,9 +111,9 @@ namespace medicentro
 			this.btnCancelar.UseUnderline = true;
 			this.btnCancelar.Label = global::Mono.Unix.Catalog.GetString("Cancelar");
 			this.fixed1.Add(this.btnCancelar);
-			global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.btnCancelar]));
-			w11.X = 698;
-			w11.Y = 376;
+			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.btnCancelar]));
+			w7.X = 799;
+			w7.Y = 389;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.btnRealizarMov = new global::Gtk.Button();
 			this.btnRealizarMov.CanFocus = true;
@@ -152,17 +121,96 @@ namespace medicentro
 			this.btnRealizarMov.UseUnderline = true;
 			this.btnRealizarMov.Label = global::Mono.Unix.Catalog.GetString("Realizar");
 			this.fixed1.Add(this.btnRealizarMov);
-			global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.btnRealizarMov]));
-			w12.X = 607;
-			w12.Y = 377;
+			global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.btnRealizarMov]));
+			w8.X = 717;
+			w8.Y = 390;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.lblNombreProd = new global::Gtk.Label();
+			this.lblNombreProd.Name = "lblNombreProd";
+			this.lblNombreProd.LabelProp = global::Mono.Unix.Catalog.GetString("Nombre Producto:");
+			this.fixed1.Add(this.lblNombreProd);
+			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblNombreProd]));
+			w9.X = 8;
+			w9.Y = 163;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.txtNombreProd = new global::Gtk.Entry();
+			this.txtNombreProd.WidthRequest = 200;
+			this.txtNombreProd.CanFocus = true;
+			this.txtNombreProd.Name = "txtNombreProd";
+			this.txtNombreProd.IsEditable = false;
+			this.txtNombreProd.InvisibleChar = '•';
+			this.fixed1.Add(this.txtNombreProd);
+			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtNombreProd]));
+			w10.X = 141;
+			w10.Y = 159;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.txtCantidad = new global::Gtk.Entry();
+			this.txtCantidad.WidthRequest = 200;
+			this.txtCantidad.CanFocus = true;
+			this.txtCantidad.Name = "txtCantidad";
+			this.txtCantidad.IsEditable = true;
+			this.txtCantidad.InvisibleChar = '•';
+			this.fixed1.Add(this.txtCantidad);
+			global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtCantidad]));
+			w11.X = 143;
+			w11.Y = 214;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.lblCantidad = new global::Gtk.Label();
+			this.lblCantidad.Name = "lblCantidad";
+			this.lblCantidad.LabelProp = global::Mono.Unix.Catalog.GetString("Cantidad:");
+			this.fixed1.Add(this.lblCantidad);
+			global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblCantidad]));
+			w12.X = 67;
+			w12.Y = 217;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.lblDescripcion = new global::Gtk.Label();
+			this.lblDescripcion.Name = "lblDescripcion";
+			this.lblDescripcion.LabelProp = global::Mono.Unix.Catalog.GetString("Descripcion:");
+			this.fixed1.Add(this.lblDescripcion);
+			global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblDescripcion]));
+			w13.X = 50;
+			w13.Y = 271;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.txtFecha = new global::Gtk.Entry();
+			this.txtFecha.WidthRequest = 200;
+			this.txtFecha.CanFocus = true;
+			this.txtFecha.Name = "txtFecha";
+			this.txtFecha.IsEditable = true;
+			this.txtFecha.InvisibleChar = '•';
+			this.fixed1.Add(this.txtFecha);
+			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtFecha]));
+			w14.X = 149;
+			w14.Y = 327;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.lblFecha = new global::Gtk.Label();
+			this.lblFecha.Name = "lblFecha";
+			this.lblFecha.LabelProp = global::Mono.Unix.Catalog.GetString("Fecha:");
+			this.fixed1.Add(this.lblFecha);
+			global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblFecha]));
+			w15.X = 88;
+			w15.Y = 332;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.txtDescripcion = new global::Gtk.Entry();
+			this.txtDescripcion.WidthRequest = 200;
+			this.txtDescripcion.CanFocus = true;
+			this.txtDescripcion.Name = "txtDescripcion";
+			this.txtDescripcion.IsEditable = true;
+			this.txtDescripcion.InvisibleChar = '•';
+			this.fixed1.Add(this.txtDescripcion);
+			global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtDescripcion]));
+			w16.X = 146;
+			w16.Y = 269;
 			this.Add(this.fixed1);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 800;
+			this.DefaultWidth = 900;
 			this.DefaultHeight = 430;
 			this.Show();
+			this.txtBuscarProd.Changed += new global::System.EventHandler(this.OnTxtBuscarProdChanged);
+			this.tvwProductos.CursorChanged += new global::System.EventHandler(this.OnTvwProductosCursorChanged);
+			this.btnRealizarMov.Clicked += new global::System.EventHandler(this.OnBtnRealizarMovClicked);
 		}
 	}
 }

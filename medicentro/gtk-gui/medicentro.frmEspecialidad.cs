@@ -12,13 +12,9 @@ namespace medicentro
 
 		private global::Gtk.Entry txtNombreEsp;
 
-		private global::Gtk.ScrolledWindow textViewDescripcion;
-
-		private global::Gtk.TextView textview1;
-
 		private global::Gtk.ScrolledWindow tvwEspecialidad;
 
-		private global::Gtk.TreeView treeview2;
+		private global::Gtk.TreeView tvwEspecialidades;
 
 		private global::Gtk.Entry txtBuscarEsp;
 
@@ -34,6 +30,8 @@ namespace medicentro
 
 		private global::Gtk.Label lblEspecialidad;
 
+		private global::Gtk.Entry txtDesEsp;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
@@ -41,7 +39,7 @@ namespace medicentro
 			this.WidthRequest = 800;
 			this.HeightRequest = 430;
 			this.Name = "medicentro.frmEspecialidad";
-			this.Title = global::Mono.Unix.Catalog.GetString("frmEspecialidad");
+			this.Title = global::Mono.Unix.Catalog.GetString("Especialidad");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Container child medicentro.frmEspecialidad.Gtk.Container+ContainerChild
 			this.fixedEspecialidad = new global::Gtk.Fixed();
@@ -75,35 +73,20 @@ namespace medicentro
 			w3.X = 118;
 			w3.Y = 51;
 			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
-			this.textViewDescripcion = new global::Gtk.ScrolledWindow();
-			this.textViewDescripcion.WidthRequest = 282;
-			this.textViewDescripcion.HeightRequest = 85;
-			this.textViewDescripcion.Name = "textViewDescripcion";
-			this.textViewDescripcion.ShadowType = ((global::Gtk.ShadowType)(1));
-			// Container child textViewDescripcion.Gtk.Container+ContainerChild
-			this.textview1 = new global::Gtk.TextView();
-			this.textview1.CanFocus = true;
-			this.textview1.Name = "textview1";
-			this.textViewDescripcion.Add(this.textview1);
-			this.fixedEspecialidad.Add(this.textViewDescripcion);
-			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.textViewDescripcion]));
-			w5.X = 118;
-			w5.Y = 94;
-			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
 			this.tvwEspecialidad = new global::Gtk.ScrolledWindow();
 			this.tvwEspecialidad.WidthRequest = 770;
 			this.tvwEspecialidad.HeightRequest = 145;
 			this.tvwEspecialidad.Name = "tvwEspecialidad";
 			this.tvwEspecialidad.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child tvwEspecialidad.Gtk.Container+ContainerChild
-			this.treeview2 = new global::Gtk.TreeView();
-			this.treeview2.CanFocus = true;
-			this.treeview2.Name = "treeview2";
-			this.tvwEspecialidad.Add(this.treeview2);
+			this.tvwEspecialidades = new global::Gtk.TreeView();
+			this.tvwEspecialidades.CanFocus = true;
+			this.tvwEspecialidades.Name = "tvwEspecialidades";
+			this.tvwEspecialidad.Add(this.tvwEspecialidades);
 			this.fixedEspecialidad.Add(this.tvwEspecialidad);
-			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.tvwEspecialidad]));
-			w7.X = 17;
-			w7.Y = 272;
+			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.tvwEspecialidad]));
+			w5.X = 17;
+			w5.Y = 272;
 			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
 			this.txtBuscarEsp = new global::Gtk.Entry();
 			this.txtBuscarEsp.WidthRequest = 252;
@@ -112,9 +95,9 @@ namespace medicentro
 			this.txtBuscarEsp.IsEditable = true;
 			this.txtBuscarEsp.InvisibleChar = '•';
 			this.fixedEspecialidad.Add(this.txtBuscarEsp);
-			global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.txtBuscarEsp]));
-			w8.X = 15;
-			w8.Y = 232;
+			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.txtBuscarEsp]));
+			w6.X = 15;
+			w6.Y = 232;
 			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
 			this.btnBuscarEsp = new global::Gtk.Button();
 			this.btnBuscarEsp.WidthRequest = 82;
@@ -123,9 +106,9 @@ namespace medicentro
 			this.btnBuscarEsp.UseUnderline = true;
 			this.btnBuscarEsp.Label = global::Mono.Unix.Catalog.GetString("Buscar");
 			this.fixedEspecialidad.Add(this.btnBuscarEsp);
-			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnBuscarEsp]));
-			w9.X = 282;
-			w9.Y = 230;
+			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnBuscarEsp]));
+			w7.X = 282;
+			w7.Y = 230;
 			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
 			this.btnGuardarEsp = new global::Gtk.Button();
 			this.btnGuardarEsp.WidthRequest = 82;
@@ -134,9 +117,9 @@ namespace medicentro
 			this.btnGuardarEsp.UseUnderline = true;
 			this.btnGuardarEsp.Label = global::Mono.Unix.Catalog.GetString("Guardar");
 			this.fixedEspecialidad.Add(this.btnGuardarEsp);
-			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnGuardarEsp]));
-			w10.X = 415;
-			w10.Y = 230;
+			global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnGuardarEsp]));
+			w8.X = 415;
+			w8.Y = 230;
 			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
 			this.btnActualizarEsp = new global::Gtk.Button();
 			this.btnActualizarEsp.CanFocus = true;
@@ -144,9 +127,9 @@ namespace medicentro
 			this.btnActualizarEsp.UseUnderline = true;
 			this.btnActualizarEsp.Label = global::Mono.Unix.Catalog.GetString("Actualizar");
 			this.fixedEspecialidad.Add(this.btnActualizarEsp);
-			global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnActualizarEsp]));
-			w11.X = 508;
-			w11.Y = 230;
+			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnActualizarEsp]));
+			w9.X = 508;
+			w9.Y = 230;
 			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
 			this.btnCancelar = new global::Gtk.Button();
 			this.btnCancelar.WidthRequest = 82;
@@ -155,9 +138,9 @@ namespace medicentro
 			this.btnCancelar.UseUnderline = true;
 			this.btnCancelar.Label = global::Mono.Unix.Catalog.GetString("Cancelar");
 			this.fixedEspecialidad.Add(this.btnCancelar);
-			global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnCancelar]));
-			w12.X = 693;
-			w12.Y = 229;
+			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnCancelar]));
+			w10.X = 693;
+			w10.Y = 229;
 			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
 			this.btnEliminarEsp = new global::Gtk.Button();
 			this.btnEliminarEsp.WidthRequest = 82;
@@ -166,17 +149,28 @@ namespace medicentro
 			this.btnEliminarEsp.UseUnderline = true;
 			this.btnEliminarEsp.Label = global::Mono.Unix.Catalog.GetString("Eliminar");
 			this.fixedEspecialidad.Add(this.btnEliminarEsp);
-			global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnEliminarEsp]));
-			w13.X = 601;
-			w13.Y = 230;
+			global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.btnEliminarEsp]));
+			w11.X = 601;
+			w11.Y = 230;
 			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
 			this.lblEspecialidad = new global::Gtk.Label();
 			this.lblEspecialidad.Name = "lblEspecialidad";
 			this.lblEspecialidad.LabelProp = global::Mono.Unix.Catalog.GetString("Especialidades");
 			this.fixedEspecialidad.Add(this.lblEspecialidad);
-			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.lblEspecialidad]));
-			w14.X = 333;
-			w14.Y = 11;
+			global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.lblEspecialidad]));
+			w12.X = 333;
+			w12.Y = 11;
+			// Container child fixedEspecialidad.Gtk.Fixed+FixedChild
+			this.txtDesEsp = new global::Gtk.Entry();
+			this.txtDesEsp.WidthRequest = 270;
+			this.txtDesEsp.CanFocus = true;
+			this.txtDesEsp.Name = "txtDesEsp";
+			this.txtDesEsp.IsEditable = true;
+			this.txtDesEsp.InvisibleChar = '•';
+			this.fixedEspecialidad.Add(this.txtDesEsp);
+			global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixedEspecialidad[this.txtDesEsp]));
+			w13.X = 120;
+			w13.Y = 92;
 			this.Add(this.fixedEspecialidad);
 			if ((this.Child != null))
 			{
@@ -185,6 +179,12 @@ namespace medicentro
 			this.DefaultWidth = 800;
 			this.DefaultHeight = 430;
 			this.Show();
+			this.tvwEspecialidades.CursorChanged += new global::System.EventHandler(this.OnTvwEspecialidadesCursorChanged);
+			this.btnBuscarEsp.Clicked += new global::System.EventHandler(this.OnBtnBuscarEspClicked);
+			this.btnGuardarEsp.Clicked += new global::System.EventHandler(this.OnBtnGuardarEspClicked);
+			this.btnActualizarEsp.Clicked += new global::System.EventHandler(this.OnBtnActualizarEspClicked);
+			this.btnCancelar.Clicked += new global::System.EventHandler(this.OnBtnCancelarClicked);
+			this.btnEliminarEsp.Clicked += new global::System.EventHandler(this.OnBtnEliminarEspClicked);
 		}
 	}
 }

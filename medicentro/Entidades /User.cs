@@ -10,6 +10,7 @@ namespace medicentro.Entidades.Seguridad
         private String pwd;
         private String nombre;
         private String apellidos;
+        private string email;
         private String pwd_temp;
         private int estado_user;
 
@@ -22,6 +23,7 @@ namespace medicentro.Entidades.Seguridad
         public string Apellidos { get => apellidos; set => apellidos = value; }
         public string Pwd_temp { get => pwd_temp; set => pwd_temp = value; }
         public int Estado_user { get => estado_user; set => estado_user = value; }
+        public string Email { get => email; set => email = value; }
 
         public User()
         {

@@ -15,7 +15,7 @@ namespace medicentro
 			this.WidthRequest = 685;
 			this.HeightRequest = 465;
 			this.Name = "medicentro.Splashscreen";
-			this.Title = global::Mono.Unix.Catalog.GetString("Splashscreen");
+			this.Title = global::Mono.Unix.Catalog.GetString("Medicentro Dental 1.0.0 Beta 2019");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Container child medicentro.Splashscreen.Gtk.Container+ContainerChild
 			this.fixedMainScreen = new global::Gtk.Fixed();

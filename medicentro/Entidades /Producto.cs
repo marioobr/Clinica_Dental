@@ -8,8 +8,8 @@ namespace medicentro.Entidades.Productos
         private int id_producto;
         private int id_tipoProducto;
         private String nombre_producto;
-        private int precioprod;
-        private int descripcion_prod;
+        private float precioprod;
+        private string descripcion_prod;
         private int stock;
         private int cantini;
         private int estado;
@@ -18,8 +18,8 @@ namespace medicentro.Entidades.Productos
 
         public int Id_producto { get => id_producto; set => id_producto = value; }
         public string Nombre_producto { get => nombre_producto; set => nombre_producto = value; }
-        public int Precioprod { get => precioprod; set => precioprod = value; }
-        public int Descripcion_prod { get => descripcion_prod; set => descripcion_prod = value; }
+        public float Precioprod { get => precioprod; set => precioprod = value; }
+        public string Descripcion_prod { get => descripcion_prod; set => descripcion_prod = value; }
         public int Stock { get => stock; set => stock = value; }
         public int Cantini { get => cantini; set => cantini = value; }
         public int Estado { get => estado; set => estado = value; }

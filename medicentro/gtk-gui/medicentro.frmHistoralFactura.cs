@@ -10,11 +10,11 @@ namespace medicentro
 
 		private global::Gtk.TreeView tvwFacturas;
 
-		private global::Gtk.Label lblInfo;
-
 		private global::Gtk.Entry txtBuscar;
 
 		private global::Gtk.Button btnBuscar;
+
+		private global::Gtk.Label lblInfo;
 
 		protected virtual void Build()
 		{
@@ -23,7 +23,7 @@ namespace medicentro
 			this.WidthRequest = 800;
 			this.HeightRequest = 400;
 			this.Name = "medicentro.frmHistoralFactura";
-			this.Title = global::Mono.Unix.Catalog.GetString("frmHistoralFactura");
+			this.Title = global::Mono.Unix.Catalog.GetString("Historial de Facturas");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.AllowGrow = false;
 			// Container child medicentro.frmHistoralFactura.Gtk.Container+ContainerChild
@@ -48,14 +48,6 @@ namespace medicentro
 			w2.X = 15;
 			w2.Y = 152;
 			// Container child fixed5.Gtk.Fixed+FixedChild
-			this.lblInfo = new global::Gtk.Label();
-			this.lblInfo.Name = "lblInfo";
-			this.lblInfo.LabelProp = global::Mono.Unix.Catalog.GetString("Historial de facturas");
-			this.fixed5.Add(this.lblInfo);
-			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblInfo]));
-			w3.X = 308;
-			w3.Y = 14;
-			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.txtBuscar = new global::Gtk.Entry();
 			this.txtBuscar.WidthRequest = 0;
 			this.txtBuscar.CanFocus = true;
@@ -63,9 +55,9 @@ namespace medicentro
 			this.txtBuscar.IsEditable = true;
 			this.txtBuscar.InvisibleChar = '•';
 			this.fixed5.Add(this.txtBuscar);
-			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.txtBuscar]));
-			w4.X = 27;
-			w4.Y = 93;
+			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.txtBuscar]));
+			w3.X = 27;
+			w3.Y = 93;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.btnBuscar = new global::Gtk.Button();
 			this.btnBuscar.WidthRequest = 100;
@@ -74,9 +66,17 @@ namespace medicentro
 			this.btnBuscar.UseUnderline = true;
 			this.btnBuscar.Label = global::Mono.Unix.Catalog.GetString("Buscar");
 			this.fixed5.Add(this.btnBuscar);
-			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.btnBuscar]));
-			w5.X = 207;
-			w5.Y = 90;
+			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.btnBuscar]));
+			w4.X = 207;
+			w4.Y = 90;
+			// Container child fixed5.Gtk.Fixed+FixedChild
+			this.lblInfo = new global::Gtk.Label();
+			this.lblInfo.Name = "lblInfo";
+			this.lblInfo.LabelProp = global::Mono.Unix.Catalog.GetString("Historial de facturas");
+			this.fixed5.Add(this.lblInfo);
+			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblInfo]));
+			w5.X = 326;
+			w5.Y = 15;
 			this.Add(this.fixed5);
 			if ((this.Child != null))
 			{
