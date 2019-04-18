@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{F5F603FB-92BA-4F3F-9276-2DC6D0B61DAE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="datos/dtUsuarios.cs">
+    <Files>
+      <File FileName="datos/dtRoles.cs" Line="77" Column="29" />
+      <File FileName="datos/dtUsuarios.cs" Line="262" Column="23" />
+      <File FileName="frmUserRol.cs" Line="29" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.seguridad PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
