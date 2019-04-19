@@ -10,27 +10,23 @@ namespace medicentro
 
 		private global::Gtk.Label lblCedula;
 
-		private global::Gtk.Label lblIDDoctor;
-
-		private global::Gtk.Entry txtIDDoc;
-
 		private global::Gtk.Entry txtCedula;
 
 		private global::Gtk.Entry txtMINSA;
 
-		private global::Gtk.RadioButton rbMas;
+		private global::Gtk.Label lblDoctorTItulo;
 
-		private global::Gtk.RadioButton rbFemenino;
+		private global::Gtk.Label lblNombDoct;
 
-		private global::Gtk.Label lblSexo;
+		private global::Gtk.Entry txtNombreDoc;
 
-		private global::Gtk.Label lblEstadoDoc;
+		private global::Gtk.Label lbLApellidoDoc;
 
-		private global::Gtk.ComboBox cbEstadoDoc;
+		private global::Gtk.Entry txtApellidoDoc;
 
-		private global::Gtk.ScrolledWindow tvwDoctor;
+		private global::Gtk.Label lblTelefonoDoc;
 
-		private global::Gtk.TreeView treeview1;
+		private global::Gtk.Entry txtTelefonoDoc;
 
 		private global::Gtk.Entry txtBuscarDoctor;
 
@@ -44,23 +40,15 @@ namespace medicentro
 
 		private global::Gtk.Button btnCancelarDoc;
 
-		private global::Gtk.Entry lblNombreDoc;
+		private global::Gtk.ScrolledWindow treeview;
 
-		private global::Gtk.Label lblNombDoct;
+		private global::Gtk.TreeView tvwDoctor;
 
-		private global::Gtk.Entry txtApellidoDoc;
+		private global::Gtk.Label lblSexo;
 
-		private global::Gtk.Label lbLApellidoDoc;
+		private global::Gtk.RadioButton rbMas;
 
-		private global::Gtk.ComboBox cbEspecialidadDoc;
-
-		private global::Gtk.Label lblEspecialidad;
-
-		private global::Gtk.Entry txtTelefonoDoc;
-
-		private global::Gtk.Label lblTelefonoDoc;
-
-		private global::Gtk.Label lblDoctorTItulo;
+		private global::Gtk.RadioButton rbFemenino;
 
 		protected virtual void Build()
 		{
@@ -69,7 +57,7 @@ namespace medicentro
 			this.WidthRequest = 800;
 			this.HeightRequest = 430;
 			this.Name = "medicentro.frmDoctor";
-			this.Title = global::Mono.Unix.Catalog.GetString("frmDoctor");
+			this.Title = global::Mono.Unix.Catalog.GetString("Registro de Doctor");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Container child medicentro.frmDoctor.Gtk.Container+ContainerChild
 			this.fixedDoctor = new global::Gtk.Fixed();
@@ -92,33 +80,15 @@ namespace medicentro
 			w2.X = 61;
 			w2.Y = 95;
 			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.lblIDDoctor = new global::Gtk.Label();
-			this.lblIDDoctor.Name = "lblIDDoctor";
-			this.lblIDDoctor.LabelProp = global::Mono.Unix.Catalog.GetString("ID de Doctor: ");
-			this.fixedDoctor.Add(this.lblIDDoctor);
-			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblIDDoctor]));
-			w3.X = 23;
-			w3.Y = 56;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.txtIDDoc = new global::Gtk.Entry();
-			this.txtIDDoc.CanFocus = true;
-			this.txtIDDoc.Name = "txtIDDoc";
-			this.txtIDDoc.IsEditable = true;
-			this.txtIDDoc.InvisibleChar = '•';
-			this.fixedDoctor.Add(this.txtIDDoc);
-			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtIDDoc]));
-			w4.X = 118;
-			w4.Y = 51;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
 			this.txtCedula = new global::Gtk.Entry();
 			this.txtCedula.CanFocus = true;
 			this.txtCedula.Name = "txtCedula";
 			this.txtCedula.IsEditable = true;
 			this.txtCedula.InvisibleChar = '•';
 			this.fixedDoctor.Add(this.txtCedula);
-			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtCedula]));
-			w5.X = 118;
-			w5.Y = 89;
+			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtCedula]));
+			w3.X = 118;
+			w3.Y = 89;
 			// Container child fixedDoctor.Gtk.Fixed+FixedChild
 			this.txtMINSA = new global::Gtk.Entry();
 			this.txtMINSA.CanFocus = true;
@@ -126,154 +96,44 @@ namespace medicentro
 			this.txtMINSA.IsEditable = true;
 			this.txtMINSA.InvisibleChar = '•';
 			this.fixedDoctor.Add(this.txtMINSA);
-			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtMINSA]));
-			w6.X = 118;
-			w6.Y = 127;
+			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtMINSA]));
+			w4.X = 118;
+			w4.Y = 127;
 			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.rbMas = new global::Gtk.RadioButton(global::Mono.Unix.Catalog.GetString("Masculino"));
-			this.rbMas.CanFocus = true;
-			this.rbMas.Name = "rbMas";
-			this.rbMas.DrawIndicator = true;
-			this.rbMas.UseUnderline = true;
-			this.rbMas.Group = new global::GLib.SList(global::System.IntPtr.Zero);
-			this.fixedDoctor.Add(this.rbMas);
-			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.rbMas]));
-			w7.X = 93;
-			w7.Y = 166;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.rbFemenino = new global::Gtk.RadioButton(global::Mono.Unix.Catalog.GetString("Femenino"));
-			this.rbFemenino.CanFocus = true;
-			this.rbFemenino.Name = "rbFemenino";
-			this.rbFemenino.DrawIndicator = true;
-			this.rbFemenino.UseUnderline = true;
-			this.rbFemenino.Group = this.rbMas.Group;
-			this.fixedDoctor.Add(this.rbFemenino);
-			global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.rbFemenino]));
-			w8.X = 197;
-			w8.Y = 166;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.lblSexo = new global::Gtk.Label();
-			this.lblSexo.Name = "lblSexo";
-			this.lblSexo.LabelProp = global::Mono.Unix.Catalog.GetString("Sexo: ");
-			this.fixedDoctor.Add(this.lblSexo);
-			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblSexo]));
-			w9.X = 40;
-			w9.Y = 169;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.lblEstadoDoc = new global::Gtk.Label();
-			this.lblEstadoDoc.Name = "lblEstadoDoc";
-			this.lblEstadoDoc.LabelProp = global::Mono.Unix.Catalog.GetString("Estado: ");
-			this.fixedDoctor.Add(this.lblEstadoDoc);
-			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblEstadoDoc]));
-			w10.X = 27;
-			w10.Y = 205;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.cbEstadoDoc = global::Gtk.ComboBox.NewText();
-			this.cbEstadoDoc.WidthRequest = 180;
-			this.cbEstadoDoc.Name = "cbEstadoDoc";
-			this.fixedDoctor.Add(this.cbEstadoDoc);
-			global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.cbEstadoDoc]));
-			w11.X = 99;
-			w11.Y = 197;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.tvwDoctor = new global::Gtk.ScrolledWindow();
-			this.tvwDoctor.WidthRequest = 753;
-			this.tvwDoctor.HeightRequest = 113;
-			this.tvwDoctor.Name = "tvwDoctor";
-			this.tvwDoctor.ShadowType = ((global::Gtk.ShadowType)(1));
-			// Container child tvwDoctor.Gtk.Container+ContainerChild
-			this.treeview1 = new global::Gtk.TreeView();
-			this.treeview1.CanFocus = true;
-			this.treeview1.Name = "treeview1";
-			this.tvwDoctor.Add(this.treeview1);
-			this.fixedDoctor.Add(this.tvwDoctor);
-			global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.tvwDoctor]));
-			w13.X = 30;
-			w13.Y = 303;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.txtBuscarDoctor = new global::Gtk.Entry();
-			this.txtBuscarDoctor.WidthRequest = 252;
-			this.txtBuscarDoctor.CanFocus = true;
-			this.txtBuscarDoctor.Name = "txtBuscarDoctor";
-			this.txtBuscarDoctor.IsEditable = true;
-			this.txtBuscarDoctor.InvisibleChar = '•';
-			this.fixedDoctor.Add(this.txtBuscarDoctor);
-			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtBuscarDoctor]));
-			w14.X = 29;
-			w14.Y = 259;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.BuscarDoctor = new global::Gtk.Button();
-			this.BuscarDoctor.WidthRequest = 82;
-			this.BuscarDoctor.CanFocus = true;
-			this.BuscarDoctor.Name = "BuscarDoctor";
-			this.BuscarDoctor.UseUnderline = true;
-			this.BuscarDoctor.Label = global::Mono.Unix.Catalog.GetString("Buscar");
-			this.fixedDoctor.Add(this.BuscarDoctor);
-			global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.BuscarDoctor]));
-			w15.X = 290;
-			w15.Y = 257;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.btnGuardarDoc = new global::Gtk.Button();
-			this.btnGuardarDoc.WidthRequest = 82;
-			this.btnGuardarDoc.CanFocus = true;
-			this.btnGuardarDoc.Name = "btnGuardarDoc";
-			this.btnGuardarDoc.UseUnderline = true;
-			this.btnGuardarDoc.Label = global::Mono.Unix.Catalog.GetString("Guardar");
-			this.fixedDoctor.Add(this.btnGuardarDoc);
-			global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.btnGuardarDoc]));
-			w16.X = 425;
-			w16.Y = 256;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.btnActualizarDoc = new global::Gtk.Button();
-			this.btnActualizarDoc.CanFocus = true;
-			this.btnActualizarDoc.Name = "btnActualizarDoc";
-			this.btnActualizarDoc.UseUnderline = true;
-			this.btnActualizarDoc.Label = global::Mono.Unix.Catalog.GetString("Actualizar");
-			this.fixedDoctor.Add(this.btnActualizarDoc);
-			global::Gtk.Fixed.FixedChild w17 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.btnActualizarDoc]));
-			w17.X = 517;
-			w17.Y = 256;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.btnEliminarDoctor = new global::Gtk.Button();
-			this.btnEliminarDoctor.WidthRequest = 82;
-			this.btnEliminarDoctor.CanFocus = true;
-			this.btnEliminarDoctor.Name = "btnEliminarDoctor";
-			this.btnEliminarDoctor.UseUnderline = true;
-			this.btnEliminarDoctor.Label = global::Mono.Unix.Catalog.GetString("Eliminar");
-			this.fixedDoctor.Add(this.btnEliminarDoctor);
-			global::Gtk.Fixed.FixedChild w18 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.btnEliminarDoctor]));
-			w18.X = 607;
-			w18.Y = 256;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.btnCancelarDoc = new global::Gtk.Button();
-			this.btnCancelarDoc.WidthRequest = 82;
-			this.btnCancelarDoc.CanFocus = true;
-			this.btnCancelarDoc.Name = "btnCancelarDoc";
-			this.btnCancelarDoc.UseUnderline = true;
-			this.btnCancelarDoc.Label = global::Mono.Unix.Catalog.GetString("Cancelar");
-			this.fixedDoctor.Add(this.btnCancelarDoc);
-			global::Gtk.Fixed.FixedChild w19 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.btnCancelarDoc]));
-			w19.X = 697;
-			w19.Y = 256;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.lblNombreDoc = new global::Gtk.Entry();
-			this.lblNombreDoc.WidthRequest = 215;
-			this.lblNombreDoc.CanFocus = true;
-			this.lblNombreDoc.Name = "lblNombreDoc";
-			this.lblNombreDoc.IsEditable = true;
-			this.lblNombreDoc.InvisibleChar = '•';
-			this.fixedDoctor.Add(this.lblNombreDoc);
-			global::Gtk.Fixed.FixedChild w20 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblNombreDoc]));
-			w20.X = 509;
-			w20.Y = 47;
+			this.lblDoctorTItulo = new global::Gtk.Label();
+			this.lblDoctorTItulo.Name = "lblDoctorTItulo";
+			this.lblDoctorTItulo.LabelProp = global::Mono.Unix.Catalog.GetString("Registro de Doctores");
+			this.fixedDoctor.Add(this.lblDoctorTItulo);
+			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblDoctorTItulo]));
+			w5.X = 288;
+			w5.Y = 10;
 			// Container child fixedDoctor.Gtk.Fixed+FixedChild
 			this.lblNombDoct = new global::Gtk.Label();
 			this.lblNombDoct.Name = "lblNombDoct";
 			this.lblNombDoct.LabelProp = global::Mono.Unix.Catalog.GetString("Nombres: ");
 			this.fixedDoctor.Add(this.lblNombDoct);
-			global::Gtk.Fixed.FixedChild w21 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblNombDoct]));
-			w21.X = 421;
-			w21.Y = 51;
+			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblNombDoct]));
+			w6.X = 43;
+			w6.Y = 57;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.txtNombreDoc = new global::Gtk.Entry();
+			this.txtNombreDoc.WidthRequest = 215;
+			this.txtNombreDoc.CanFocus = true;
+			this.txtNombreDoc.Name = "txtNombreDoc";
+			this.txtNombreDoc.IsEditable = true;
+			this.txtNombreDoc.InvisibleChar = '•';
+			this.fixedDoctor.Add(this.txtNombreDoc);
+			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtNombreDoc]));
+			w7.X = 117;
+			w7.Y = 50;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.lbLApellidoDoc = new global::Gtk.Label();
+			this.lbLApellidoDoc.Name = "lbLApellidoDoc";
+			this.lbLApellidoDoc.LabelProp = global::Mono.Unix.Catalog.GetString("Apellidos: ");
+			this.fixedDoctor.Add(this.lbLApellidoDoc);
+			global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lbLApellidoDoc]));
+			w8.X = 420;
+			w8.Y = 53;
 			// Container child fixedDoctor.Gtk.Fixed+FixedChild
 			this.txtApellidoDoc = new global::Gtk.Entry();
 			this.txtApellidoDoc.WidthRequest = 215;
@@ -282,33 +142,17 @@ namespace medicentro
 			this.txtApellidoDoc.IsEditable = true;
 			this.txtApellidoDoc.InvisibleChar = '•';
 			this.fixedDoctor.Add(this.txtApellidoDoc);
-			global::Gtk.Fixed.FixedChild w22 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtApellidoDoc]));
-			w22.X = 509;
-			w22.Y = 88;
+			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtApellidoDoc]));
+			w9.X = 505;
+			w9.Y = 48;
 			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.lbLApellidoDoc = new global::Gtk.Label();
-			this.lbLApellidoDoc.Name = "lbLApellidoDoc";
-			this.lbLApellidoDoc.LabelProp = global::Mono.Unix.Catalog.GetString("Apellidos: ");
-			this.fixedDoctor.Add(this.lbLApellidoDoc);
-			global::Gtk.Fixed.FixedChild w23 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lbLApellidoDoc]));
-			w23.X = 419;
-			w23.Y = 90;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.cbEspecialidadDoc = global::Gtk.ComboBox.NewText();
-			this.cbEspecialidadDoc.WidthRequest = 161;
-			this.cbEspecialidadDoc.Name = "cbEspecialidadDoc";
-			this.fixedDoctor.Add(this.cbEspecialidadDoc);
-			global::Gtk.Fixed.FixedChild w24 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.cbEspecialidadDoc]));
-			w24.X = 509;
-			w24.Y = 176;
-			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.lblEspecialidad = new global::Gtk.Label();
-			this.lblEspecialidad.Name = "lblEspecialidad";
-			this.lblEspecialidad.LabelProp = global::Mono.Unix.Catalog.GetString("Especialidad: ");
-			this.fixedDoctor.Add(this.lblEspecialidad);
-			global::Gtk.Fixed.FixedChild w25 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblEspecialidad]));
-			w25.X = 399;
-			w25.Y = 182;
+			this.lblTelefonoDoc = new global::Gtk.Label();
+			this.lblTelefonoDoc.Name = "lblTelefonoDoc";
+			this.lblTelefonoDoc.LabelProp = global::Mono.Unix.Catalog.GetString("Telefono: ");
+			this.fixedDoctor.Add(this.lblTelefonoDoc);
+			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblTelefonoDoc]));
+			w10.X = 422;
+			w10.Y = 95;
 			// Container child fixedDoctor.Gtk.Fixed+FixedChild
 			this.txtTelefonoDoc = new global::Gtk.Entry();
 			this.txtTelefonoDoc.CanFocus = true;
@@ -316,25 +160,120 @@ namespace medicentro
 			this.txtTelefonoDoc.IsEditable = true;
 			this.txtTelefonoDoc.InvisibleChar = '•';
 			this.fixedDoctor.Add(this.txtTelefonoDoc);
-			global::Gtk.Fixed.FixedChild w26 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtTelefonoDoc]));
-			w26.X = 509;
-			w26.Y = 132;
+			global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtTelefonoDoc]));
+			w11.X = 506;
+			w11.Y = 92;
 			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.lblTelefonoDoc = new global::Gtk.Label();
-			this.lblTelefonoDoc.Name = "lblTelefonoDoc";
-			this.lblTelefonoDoc.LabelProp = global::Mono.Unix.Catalog.GetString("Telefono: ");
-			this.fixedDoctor.Add(this.lblTelefonoDoc);
-			global::Gtk.Fixed.FixedChild w27 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblTelefonoDoc]));
-			w27.X = 422;
-			w27.Y = 136;
+			this.txtBuscarDoctor = new global::Gtk.Entry();
+			this.txtBuscarDoctor.WidthRequest = 252;
+			this.txtBuscarDoctor.CanFocus = true;
+			this.txtBuscarDoctor.Name = "txtBuscarDoctor";
+			this.txtBuscarDoctor.IsEditable = true;
+			this.txtBuscarDoctor.InvisibleChar = '•';
+			this.fixedDoctor.Add(this.txtBuscarDoctor);
+			global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.txtBuscarDoctor]));
+			w12.X = 31;
+			w12.Y = 231;
 			// Container child fixedDoctor.Gtk.Fixed+FixedChild
-			this.lblDoctorTItulo = new global::Gtk.Label();
-			this.lblDoctorTItulo.Name = "lblDoctorTItulo";
-			this.lblDoctorTItulo.LabelProp = global::Mono.Unix.Catalog.GetString("Registro de Doctores");
-			this.fixedDoctor.Add(this.lblDoctorTItulo);
-			global::Gtk.Fixed.FixedChild w28 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblDoctorTItulo]));
-			w28.X = 288;
-			w28.Y = 10;
+			this.BuscarDoctor = new global::Gtk.Button();
+			this.BuscarDoctor.WidthRequest = 82;
+			this.BuscarDoctor.CanFocus = true;
+			this.BuscarDoctor.Name = "BuscarDoctor";
+			this.BuscarDoctor.UseUnderline = true;
+			this.BuscarDoctor.Label = global::Mono.Unix.Catalog.GetString("Buscar");
+			this.fixedDoctor.Add(this.BuscarDoctor);
+			global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.BuscarDoctor]));
+			w13.X = 292;
+			w13.Y = 230;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.btnGuardarDoc = new global::Gtk.Button();
+			this.btnGuardarDoc.WidthRequest = 82;
+			this.btnGuardarDoc.CanFocus = true;
+			this.btnGuardarDoc.Name = "btnGuardarDoc";
+			this.btnGuardarDoc.UseUnderline = true;
+			this.btnGuardarDoc.Label = global::Mono.Unix.Catalog.GetString("Guardar");
+			this.fixedDoctor.Add(this.btnGuardarDoc);
+			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.btnGuardarDoc]));
+			w14.X = 422;
+			w14.Y = 231;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.btnActualizarDoc = new global::Gtk.Button();
+			this.btnActualizarDoc.CanFocus = true;
+			this.btnActualizarDoc.Name = "btnActualizarDoc";
+			this.btnActualizarDoc.UseUnderline = true;
+			this.btnActualizarDoc.Label = global::Mono.Unix.Catalog.GetString("Actualizar");
+			this.fixedDoctor.Add(this.btnActualizarDoc);
+			global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.btnActualizarDoc]));
+			w15.X = 512;
+			w15.Y = 232;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.btnEliminarDoctor = new global::Gtk.Button();
+			this.btnEliminarDoctor.WidthRequest = 82;
+			this.btnEliminarDoctor.CanFocus = true;
+			this.btnEliminarDoctor.Name = "btnEliminarDoctor";
+			this.btnEliminarDoctor.UseUnderline = true;
+			this.btnEliminarDoctor.Label = global::Mono.Unix.Catalog.GetString("Eliminar");
+			this.fixedDoctor.Add(this.btnEliminarDoctor);
+			global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.btnEliminarDoctor]));
+			w16.X = 603;
+			w16.Y = 232;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.btnCancelarDoc = new global::Gtk.Button();
+			this.btnCancelarDoc.WidthRequest = 82;
+			this.btnCancelarDoc.CanFocus = true;
+			this.btnCancelarDoc.Name = "btnCancelarDoc";
+			this.btnCancelarDoc.UseUnderline = true;
+			this.btnCancelarDoc.Label = global::Mono.Unix.Catalog.GetString("Cancelar");
+			this.fixedDoctor.Add(this.btnCancelarDoc);
+			global::Gtk.Fixed.FixedChild w17 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.btnCancelarDoc]));
+			w17.X = 695;
+			w17.Y = 233;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.treeview = new global::Gtk.ScrolledWindow();
+			this.treeview.WidthRequest = 753;
+			this.treeview.HeightRequest = 138;
+			this.treeview.Name = "treeview";
+			this.treeview.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child treeview.Gtk.Container+ContainerChild
+			this.tvwDoctor = new global::Gtk.TreeView();
+			this.tvwDoctor.CanFocus = true;
+			this.tvwDoctor.Name = "tvwDoctor";
+			this.treeview.Add(this.tvwDoctor);
+			this.fixedDoctor.Add(this.treeview);
+			global::Gtk.Fixed.FixedChild w19 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.treeview]));
+			w19.X = 30;
+			w19.Y = 274;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.lblSexo = new global::Gtk.Label();
+			this.lblSexo.Name = "lblSexo";
+			this.lblSexo.LabelProp = global::Mono.Unix.Catalog.GetString("Sexo: ");
+			this.fixedDoctor.Add(this.lblSexo);
+			global::Gtk.Fixed.FixedChild w20 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.lblSexo]));
+			w20.X = 444;
+			w20.Y = 141;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.rbMas = new global::Gtk.RadioButton(global::Mono.Unix.Catalog.GetString("Masculino"));
+			this.rbMas.CanFocus = true;
+			this.rbMas.Name = "rbMas";
+			this.rbMas.Active = true;
+			this.rbMas.DrawIndicator = true;
+			this.rbMas.UseUnderline = true;
+			this.rbMas.Group = new global::GLib.SList(global::System.IntPtr.Zero);
+			this.fixedDoctor.Add(this.rbMas);
+			global::Gtk.Fixed.FixedChild w21 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.rbMas]));
+			w21.X = 509;
+			w21.Y = 137;
+			// Container child fixedDoctor.Gtk.Fixed+FixedChild
+			this.rbFemenino = new global::Gtk.RadioButton(global::Mono.Unix.Catalog.GetString("Femenino"));
+			this.rbFemenino.CanFocus = true;
+			this.rbFemenino.Name = "rbFemenino";
+			this.rbFemenino.DrawIndicator = true;
+			this.rbFemenino.UseUnderline = true;
+			this.rbFemenino.Group = this.rbMas.Group;
+			this.fixedDoctor.Add(this.rbFemenino);
+			global::Gtk.Fixed.FixedChild w22 = ((global::Gtk.Fixed.FixedChild)(this.fixedDoctor[this.rbFemenino]));
+			w22.X = 615;
+			w22.Y = 137;
 			this.Add(this.fixedDoctor);
 			if ((this.Child != null))
 			{
@@ -343,6 +282,12 @@ namespace medicentro
 			this.DefaultWidth = 800;
 			this.DefaultHeight = 430;
 			this.Show();
+			this.BuscarDoctor.Clicked += new global::System.EventHandler(this.OnBuscarDoctorClicked);
+			this.btnGuardarDoc.Clicked += new global::System.EventHandler(this.OnBtnGuardarDocClicked);
+			this.btnActualizarDoc.Clicked += new global::System.EventHandler(this.OnBtnActualizarDocClicked);
+			this.btnEliminarDoctor.Clicked += new global::System.EventHandler(this.OnBtnEliminarDoctorClicked);
+			this.btnCancelarDoc.Clicked += new global::System.EventHandler(this.OnBtnCancelarDocClicked);
+			this.tvwDoctor.CursorChanged += new global::System.EventHandler(this.OnTvwDoctorCursorChanged);
 		}
 	}
 }

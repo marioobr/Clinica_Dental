@@ -1,15 +1,23 @@
 ﻿<Properties StartupConfiguration="{9581B886-41C8-420F-AC5D-E1BC70292076}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="medicentro/frmUsuario.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="medicentro/Negocio/ngUsuario.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="medicentro/Splashscreen.cs" Line="5" Column="6" />
       <File FileName="medicentro/frmUsuario.cs" Line="11" Column="2" />
+=======
+      <File FileName="medicentro/Datos/DtUser.cs" Line="192" Column="17" />
+      <File FileName="medicentro/Datos/DtUserRol.cs" Line="7" Column="28" />
+      <File FileName="medicentro/Negocio/ngUsuario.cs" Line="15" Column="35" />
+>>>>>>> master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.ItemProperties.medicentro PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <FunctionBreakpoint enabled="false" line="18" column="1" function="MainWindow.OnGestionarProductosActionActivated" language="C#" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

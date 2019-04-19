@@ -40,9 +40,9 @@ namespace medicentro.Datos
                 try
                 {
                     con.Open();
-                    ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se abrio la conexion");
-                    ms.Run();
-                    ms.Destroy();
+                    //ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se abrio la conexion");
+                    //ms.Run();
+                    //ms.Destroy();
                 }
                 catch (Exception e)
                 {

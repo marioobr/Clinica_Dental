@@ -29,7 +29,11 @@ namespace medicentro.Datos
             sb.Append("USE ClinicaDental;");
             sb.Append("INSERT INTO ClinicaDental.Doctor");
             sb.Append("(idDoctor,Cedula,CodMINSA,Nombres,Apellidos,Telefono,Sexo,Estado)");
+<<<<<<< HEAD
             sb.Append("VALUES (NULL,'" + tdoc.Cedula + "','"+ tdoc.Cod_MINSA + "','" + tdoc.Nombres1 + "','" + tdoc.Apellidos1 + "','" + tdoc.Telefono + "','" + tdoc.Sexo + "','" + 1 + "')");
+=======
+            sb.Append("VALUES (NULL,'" + tdoc.Cedula + "','"+ tdoc.Cod_Minsa1 + "','" + tdoc.Nombres1 + "','" + tdoc.Apellidos1 + "','" + tdoc.Telefono + "','" + tdoc.Sexo + "','" + 1 + "')");
+>>>>>>> master
 
             try
             {
@@ -64,7 +68,11 @@ namespace medicentro.Datos
             //MessageDialog ms = null;
             //StringBuilder sb = new StringBuilder();
             sb.Append("USE ClinicaDental;");
+<<<<<<< HEAD
             sb.Append("UPDATE ClinicaDental.Doctor set Doctor.Estado = '3' WHERE Doctor.idDoctor = " + tdoc.Id_doctor + ";");
+=======
+            sb.Append("UPDATE ClinicaDental.Doctor set Doctor.Estado = '3' WHERE Doctor.idDoctor = " + tdoc.Id_Doctor + ";");
+>>>>>>> master
 
             try
             {
@@ -94,7 +102,11 @@ namespace medicentro.Datos
             //StringBuilder sb = new StringBuilder();
             sb.Clear();
             sb.Append("USE ClinicaDental;");
+<<<<<<< HEAD
             sb.Append("SELECT * FROM `Doctor` WHERE `idDoctor` = " + "'" + tdoc.Id_doctor + "';");
+=======
+            sb.Append("SELECT * FROM `Doctor` WHERE `idDoctor` = " + "'" + tdoc.Id_Doctor + "';");
+>>>>>>> master
 
             try
             {
@@ -211,9 +223,15 @@ namespace medicentro.Datos
             sb.Append("UPDATE ClinicaDental.Doctor SET Nombres = '" + tdoc.Nombres1 + "',");
             sb.Append("Apellidos = '" + tdoc.Apellidos1 + "',");
             sb.Append("Cedula = '" + tdoc.Cedula + "',");
+<<<<<<< HEAD
             sb.Append("CodMINSA = '" + tdoc.Cod_MINSA + "',");
             sb.Append("Telefono = '" + tdoc.Telefono + "'");
             sb.Append("WHERE idDoctor = " + tdoc.Id_doctor + ";");
+=======
+            sb.Append("CodMINSA = '" + tdoc.Cod_Minsa1 + "',");
+            sb.Append("Telefono = '" + tdoc.Telefono + "'");
+            sb.Append("WHERE idDoctor = " + tdoc.Id_Doctor + ";");
+>>>>>>> master
 
             try
             {
@@ -290,7 +308,11 @@ namespace medicentro.Datos
                 {
                     Doctor tdoc = new Doctor()
                     {
+<<<<<<< HEAD
                         Id_doctor = (Int32)idr["idDoctor"],
+=======
+                        Id_Doctor = (Int32)idr["idDoctor"],
+>>>>>>> master
                         Nombres1 = idr["Nombres"].ToString(),
                         Apellidos1 = idr["Apellidos"].ToString(),
 

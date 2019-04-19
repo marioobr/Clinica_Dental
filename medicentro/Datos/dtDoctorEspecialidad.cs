@@ -6,7 +6,11 @@ using medicentro.Entidades;
 using medicentro.Entidades.Doctores;
 using Gtk;
 using System.Collections.Generic;
+<<<<<<< HEAD
 
+=======
+using medicentro.Entidades.Doctor;
+>>>>>>> master
 
 namespace medicentro.Datos
 {
@@ -56,7 +60,11 @@ namespace medicentro.Datos
             }
         }//fin del metodo
 
+<<<<<<< HEAD
         public bool GuardarDoctorEspecialidad(Tbl_DoctorEsp tde)
+=======
+        public bool GuardarDoctorEspecialidad(DoctorEspecialidad tde)
+>>>>>>> master
         {
             bool guardado = false; //bandera
             int x = 0; //variable de control
@@ -97,7 +105,11 @@ namespace medicentro.Datos
 
         }//fin del metodo
 
+<<<<<<< HEAD
         public Int32 delDoctorEsp(Tbl_DoctorEsp tde)
+=======
+        public Int32 delDoctorEsp(DoctorEspecialidad tde)
+>>>>>>> master
         {
             int eliminado;
             sb.Clear();
@@ -127,7 +139,11 @@ namespace medicentro.Datos
 
         }//fin del metodo
 
+<<<<<<< HEAD
         public bool existeDocEsp(Tbl_DoctorEsp tde)
+=======
+        public bool existeDocEsp(DoctorEspecialidad tde)
+>>>>>>> master
         {
             bool existe = false; //bandera
             IDataReader idr = null;

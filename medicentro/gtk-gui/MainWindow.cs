@@ -33,6 +33,36 @@ public partial class MainWindow
 
 	private global::Gtk.Action GestionarEspecialidadesAction;
 
+	private global::Gtk.Action EspecialidadAction;
+
+	private global::Gtk.Action GestionarEspecialidadesAction1;
+
+	private global::Gtk.Action AsignarEspecialidadAction;
+
+	private global::Gtk.Action PacientesAction;
+
+	private global::Gtk.Action GestionarPacientesAction;
+
+	private global::Gtk.Action CitaAction;
+
+	private global::Gtk.Action RealizarCitaAction;
+
+	private global::Gtk.Action GestionarCitasAction;
+
+	private global::Gtk.Action RealizarCitaAction1;
+
+	private global::Gtk.Action GestionarCitasAction1;
+
+	private global::Gtk.Action SeguridadAction;
+
+	private global::Gtk.Action GestionDeUsuariosAction;
+
+	private global::Gtk.Action GestionDeRolesAction;
+
+	private global::Gtk.Action AsignarRolesAction;
+
+	private global::Gtk.Action GestionDeOpcionesAction;
+
 	private global::Gtk.VBox vbox1;
 
 	private global::Gtk.MenuBar menubar1;
@@ -85,17 +115,83 @@ public partial class MainWindow
 		this.GestionarEspecialidadesAction = new global::Gtk.Action("GestionarEspecialidadesAction", global::Mono.Unix.Catalog.GetString("Gestionar especialidades"), null, null);
 		this.GestionarEspecialidadesAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestionar especialidades");
 		w1.Add(this.GestionarEspecialidadesAction, null);
+		this.EspecialidadAction = new global::Gtk.Action("EspecialidadAction", global::Mono.Unix.Catalog.GetString("Especialidad"), null, null);
+		this.EspecialidadAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Especialidad");
+		w1.Add(this.EspecialidadAction, null);
+		this.GestionarEspecialidadesAction1 = new global::Gtk.Action("GestionarEspecialidadesAction1", global::Mono.Unix.Catalog.GetString("Gestionar especialidades"), null, null);
+		this.GestionarEspecialidadesAction1.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestionar especialidades");
+		w1.Add(this.GestionarEspecialidadesAction1, null);
+		this.AsignarEspecialidadAction = new global::Gtk.Action("AsignarEspecialidadAction", global::Mono.Unix.Catalog.GetString("Asignar especialidad"), null, null);
+		this.AsignarEspecialidadAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Asignar especialidad");
+		w1.Add(this.AsignarEspecialidadAction, null);
+		this.PacientesAction = new global::Gtk.Action("PacientesAction", global::Mono.Unix.Catalog.GetString("Pacientes"), null, null);
+		this.PacientesAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Pacientes");
+		w1.Add(this.PacientesAction, null);
+		this.GestionarPacientesAction = new global::Gtk.Action("GestionarPacientesAction", global::Mono.Unix.Catalog.GetString("Gestionar Pacientes"), null, null);
+		this.GestionarPacientesAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestionar Pacientes");
+		w1.Add(this.GestionarPacientesAction, null);
+		this.CitaAction = new global::Gtk.Action("CitaAction", global::Mono.Unix.Catalog.GetString("Cita"), null, null);
+		this.CitaAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Cita");
+		w1.Add(this.CitaAction, null);
+		this.RealizarCitaAction = new global::Gtk.Action("RealizarCitaAction", global::Mono.Unix.Catalog.GetString("Realizar Cita"), null, null);
+		this.RealizarCitaAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Realizar Cita");
+		w1.Add(this.RealizarCitaAction, null);
+		this.GestionarCitasAction = new global::Gtk.Action("GestionarCitasAction", global::Mono.Unix.Catalog.GetString("Gestionar Citas"), null, null);
+		this.GestionarCitasAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestionar Citas");
+		w1.Add(this.GestionarCitasAction, null);
+		this.RealizarCitaAction1 = new global::Gtk.Action("RealizarCitaAction1", global::Mono.Unix.Catalog.GetString("Realizar Cita"), null, null);
+		this.RealizarCitaAction1.ShortLabel = global::Mono.Unix.Catalog.GetString("Realizar Cita");
+		w1.Add(this.RealizarCitaAction1, null);
+		this.GestionarCitasAction1 = new global::Gtk.Action("GestionarCitasAction1", global::Mono.Unix.Catalog.GetString("Gestionar Citas"), null, null);
+		this.GestionarCitasAction1.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestionar Citas");
+		w1.Add(this.GestionarCitasAction1, null);
+		this.SeguridadAction = new global::Gtk.Action("SeguridadAction", global::Mono.Unix.Catalog.GetString("Seguridad"), null, null);
+		this.SeguridadAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Seguridad");
+		w1.Add(this.SeguridadAction, null);
+		this.GestionDeUsuariosAction = new global::Gtk.Action("GestionDeUsuariosAction", global::Mono.Unix.Catalog.GetString("Gestion de usuarios"), null, null);
+		this.GestionDeUsuariosAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestion de usuarios");
+		w1.Add(this.GestionDeUsuariosAction, null);
+		this.GestionDeRolesAction = new global::Gtk.Action("GestionDeRolesAction", global::Mono.Unix.Catalog.GetString("Gestion de roles"), null, null);
+		this.GestionDeRolesAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestion de roles");
+		w1.Add(this.GestionDeRolesAction, null);
+		this.AsignarRolesAction = new global::Gtk.Action("AsignarRolesAction", global::Mono.Unix.Catalog.GetString("Asignar roles"), null, null);
+		this.AsignarRolesAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Asignar roles");
+		w1.Add(this.AsignarRolesAction, null);
+		this.GestionDeOpcionesAction = new global::Gtk.Action("GestionDeOpcionesAction", global::Mono.Unix.Catalog.GetString("Gestion de opciones"), null, null);
+		this.GestionDeOpcionesAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Gestion de opciones");
+		w1.Add(this.GestionDeOpcionesAction, null);
 		this.UIManager.InsertActionGroup(w1, 0);
 		this.AddAccelGroup(this.UIManager.AccelGroup);
 		this.Name = "MainWindow";
-		this.Title = global::Mono.Unix.Catalog.GetString("MainWindow");
+		this.Title = global::Mono.Unix.Catalog.GetString("Medicentro Dental - Menu Principal");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.vbox1 = new global::Gtk.VBox();
 		this.vbox1.Name = "vbox1";
 		this.vbox1.Spacing = 6;
 		// Container child vbox1.Gtk.Box+BoxChild
-		this.UIManager.AddUiFromString(@"<ui><menubar name='menubar1'><menu name='InicioAction' action='InicioAction'><menuitem name='SalirAction' action='SalirAction'/></menu><menu name='ProductosAction' action='ProductosAction'><menuitem name='GestionarProductosAction' action='GestionarProductosAction'/><menu name='GestionarMovimientosAction' action='GestionarMovimientosAction'><menuitem name='RealizarMovimientoAction' action='RealizarMovimientoAction'/><menuitem name='HistorialAction' action='HistorialAction'/></menu></menu><menu name='DoctoresAction' action='DoctoresAction'><menuitem name='GestionarDoctoresAction' action='GestionarDoctoresAction'/><menuitem name='GestionarEspecialidadesAction' action='GestionarEspecialidadesAction'/></menu><menu name='FacturaAction' action='FacturaAction'><menuitem name='RealizarFacturaAction' action='RealizarFacturaAction'/><menuitem name='HistorialAction1' action='HistorialAction1'/></menu></menubar></ui>");
+		this.UIManager.AddUiFromString("<ui><menubar name=\'menubar1\'><menu name=\'InicioAction\' action=\'InicioAction\'><men" +
+				"uitem name=\'SalirAction\' action=\'SalirAction\'/></menu><menu name=\'ProductosActio" +
+				"n\' action=\'ProductosAction\'><menuitem name=\'GestionarProductosAction\' action=\'Ge" +
+				"stionarProductosAction\'/><menu name=\'GestionarMovimientosAction\' action=\'Gestion" +
+				"arMovimientosAction\'><menuitem name=\'RealizarMovimientoAction\' action=\'RealizarM" +
+				"ovimientoAction\'/><menuitem name=\'HistorialAction\' action=\'HistorialAction\'/></m" +
+				"enu></menu><menu name=\'DoctoresAction\' action=\'DoctoresAction\'><menuitem name=\'G" +
+				"estionarDoctoresAction\' action=\'GestionarDoctoresAction\'/><menu name=\'Especialid" +
+				"adAction\' action=\'EspecialidadAction\'><menuitem name=\'GestionarEspecialidadesAct" +
+				"ion1\' action=\'GestionarEspecialidadesAction1\'/><menuitem name=\'AsignarEspecialid" +
+				"adAction\' action=\'AsignarEspecialidadAction\'/></menu></menu><menu name=\'Paciente" +
+				"sAction\' action=\'PacientesAction\'><menuitem name=\'GestionarPacientesAction\' acti" +
+				"on=\'GestionarPacientesAction\'/><menuitem name=\'RealizarCitaAction1\' action=\'Real" +
+				"izarCitaAction1\'/><menuitem name=\'GestionarCitasAction1\' action=\'GestionarCitasA" +
+				"ction1\'/></menu><menu name=\'FacturaAction\' action=\'FacturaAction\'><menuitem name" +
+				"=\'RealizarFacturaAction\' action=\'RealizarFacturaAction\'/><menuitem name=\'Histori" +
+				"alAction1\' action=\'HistorialAction1\'/></menu><menu name=\'SeguridadAction\' action" +
+				"=\'SeguridadAction\'><menuitem name=\'GestionDeUsuariosAction\' action=\'GestionDeUsu" +
+				"ariosAction\'/><menu name=\'GestionDeRolesAction\' action=\'GestionDeRolesAction\'><m" +
+				"enuitem name=\'AsignarRolesAction\' action=\'AsignarRolesAction\'/></menu><menuitem " +
+				"name=\'GestionDeOpcionesAction\' action=\'GestionDeOpcionesAction\'/></menu></menuba" +
+				"r></ui>");
 		this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget("/menubar1")));
 		this.menubar1.Name = "menubar1";
 		this.vbox1.Add(this.menubar1);
@@ -108,7 +204,7 @@ public partial class MainWindow
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 667;
+		this.DefaultWidth = 746;
 		this.DefaultHeight = 305;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
@@ -119,6 +215,14 @@ public partial class MainWindow
 		this.RealizarFacturaAction.Activated += new global::System.EventHandler(this.OnRealizarFacturaActionActivated);
 		this.HistorialAction1.Activated += new global::System.EventHandler(this.OnHistorialAction1Activated);
 		this.GestionarDoctoresAction.Activated += new global::System.EventHandler(this.OnGestionarDoctoresActionActivated);
-		this.GestionarEspecialidadesAction.Activated += new global::System.EventHandler(this.OnGestionarEspecialidadesActionActivated);
+		//this.GestionarEspecialidadesAction.Activated += new global::System.EventHandler(this.OnGestionarEspecialidadesActionActivated);
+		this.GestionarEspecialidadesAction1.Activated += new global::System.EventHandler(this.OnGestionarEspecialidadesAction1Activated);
+		this.AsignarEspecialidadAction.Activated += new global::System.EventHandler(this.OnAsignarEspecialidadActionActivated);
+		this.GestionarPacientesAction.Activated += new global::System.EventHandler(this.OnGestionarPacientesActionActivated);
+		this.RealizarCitaAction1.Activated += new global::System.EventHandler(this.OnRealizarCitaAction1Activated);
+		this.GestionarCitasAction1.Activated += new global::System.EventHandler(this.OnGestionarCitasAction1Activated);
+		this.GestionDeUsuariosAction.Activated += new global::System.EventHandler(this.OnGestionDeUsuariosActionActivated);
+		this.AsignarRolesAction.Activated += new global::System.EventHandler(this.OnAsignarRolesActionActivated);
+		this.GestionDeOpcionesAction.Activated += new global::System.EventHandler(this.OnGestionDeOpcionesActionActivated);
 	}
 }

@@ -6,8 +6,6 @@ namespace medicentro
 	{
 		private global::Gtk.Fixed fixed2;
 
-		private global::Gtk.Label lblInfo;
-
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 
 		private global::Gtk.TreeView tvwMovimientos;
@@ -18,6 +16,8 @@ namespace medicentro
 
 		private global::Gtk.ComboBox cmbEleccion;
 
+		private global::Gtk.Label lblInfo;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
@@ -25,7 +25,7 @@ namespace medicentro
 			this.WidthRequest = 800;
 			this.HeightRequest = 430;
 			this.Name = "medicentro.frmHistorialMovimiento";
-			this.Title = global::Mono.Unix.Catalog.GetString("frmHistorialMovimiento");
+			this.Title = global::Mono.Unix.Catalog.GetString("Historial de Movimientos");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.AllowGrow = false;
 			// Container child medicentro.frmHistorialMovimiento.Gtk.Container+ContainerChild
@@ -34,14 +34,6 @@ namespace medicentro
 			this.fixed2.HeightRequest = 430;
 			this.fixed2.Name = "fixed2";
 			this.fixed2.HasWindow = false;
-			// Container child fixed2.Gtk.Fixed+FixedChild
-			this.lblInfo = new global::Gtk.Label();
-			this.lblInfo.Name = "lblInfo";
-			this.lblInfo.LabelProp = global::Mono.Unix.Catalog.GetString("Historial");
-			this.fixed2.Add(this.lblInfo);
-			global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.lblInfo]));
-			w1.X = 355;
-			w1.Y = 15;
 			// Container child fixed2.Gtk.Fixed+FixedChild
 			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
@@ -54,9 +46,9 @@ namespace medicentro
 			this.tvwMovimientos.Name = "tvwMovimientos";
 			this.GtkScrolledWindow.Add(this.tvwMovimientos);
 			this.fixed2.Add(this.GtkScrolledWindow);
-			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.GtkScrolledWindow]));
-			w3.X = 21;
-			w3.Y = 174;
+			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.GtkScrolledWindow]));
+			w2.X = 21;
+			w2.Y = 174;
 			// Container child fixed2.Gtk.Fixed+FixedChild
 			this.btnBuscar = new global::Gtk.Button();
 			this.btnBuscar.WidthRequest = 100;
@@ -65,9 +57,9 @@ namespace medicentro
 			this.btnBuscar.UseUnderline = true;
 			this.btnBuscar.Label = global::Mono.Unix.Catalog.GetString("Buscar");
 			this.fixed2.Add(this.btnBuscar);
-			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.btnBuscar]));
-			w4.X = 312;
-			w4.Y = 128;
+			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.btnBuscar]));
+			w3.X = 312;
+			w3.Y = 128;
 			// Container child fixed2.Gtk.Fixed+FixedChild
 			this.txtBusqueda = new global::Gtk.Entry();
 			this.txtBusqueda.WidthRequest = 250;
@@ -76,9 +68,9 @@ namespace medicentro
 			this.txtBusqueda.IsEditable = true;
 			this.txtBusqueda.InvisibleChar = '•';
 			this.fixed2.Add(this.txtBusqueda);
-			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.txtBusqueda]));
-			w5.X = 18;
-			w5.Y = 128;
+			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.txtBusqueda]));
+			w4.X = 18;
+			w4.Y = 128;
 			// Container child fixed2.Gtk.Fixed+FixedChild
 			this.cmbEleccion = global::Gtk.ComboBox.NewText();
 			this.cmbEleccion.AppendText(global::Mono.Unix.Catalog.GetString("Todos"));
@@ -88,9 +80,17 @@ namespace medicentro
 			this.cmbEleccion.Name = "cmbEleccion";
 			this.cmbEleccion.Active = 0;
 			this.fixed2.Add(this.cmbEleccion);
-			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.cmbEleccion]));
-			w6.X = 17;
-			w6.Y = 62;
+			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.cmbEleccion]));
+			w5.X = 17;
+			w5.Y = 62;
+			// Container child fixed2.Gtk.Fixed+FixedChild
+			this.lblInfo = new global::Gtk.Label();
+			this.lblInfo.Name = "lblInfo";
+			this.lblInfo.LabelProp = global::Mono.Unix.Catalog.GetString("Historial");
+			this.fixed2.Add(this.lblInfo);
+			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.lblInfo]));
+			w6.X = 368;
+			w6.Y = 16;
 			this.Add(this.fixed2);
 			if ((this.Child != null))
 			{

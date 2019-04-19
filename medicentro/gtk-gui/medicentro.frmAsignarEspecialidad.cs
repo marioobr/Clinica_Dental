@@ -123,8 +123,13 @@ namespace medicentro
 			{
 				this.Child.ShowAll();
 			}
+<<<<<<< HEAD
 			this.DefaultWidth = 645;
 			this.DefaultHeight = 379;
+=======
+			this.DefaultWidth = 626;
+			this.DefaultHeight = 354;
+>>>>>>> master
 			this.Show();
 			this.btnAsignarEsp.Clicked += new global::System.EventHandler(this.OnBtnAsignarEspClicked);
 		}
